@@ -1,0 +1,2 @@
+# Components
+Some functional components
