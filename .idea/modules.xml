@@ -3,6 +3,25 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Components.iml" filepath="$PROJECT_DIR$/Components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/analysis/analysis.iml" filepath="$PROJECT_DIR$/analysis/analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/animator/animator.iml" filepath="$PROJECT_DIR$/custom/animator/animator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/arouter/arouter.iml" filepath="$PROJECT_DIR$/opensource/arouter/arouter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/arouter/arouter-annotation/arouter-annotation.iml" filepath="$PROJECT_DIR$/opensource/arouter/arouter-annotation/arouter-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/arouter/arouter-api/arouter-api.iml" filepath="$PROJECT_DIR$/opensource/arouter/arouter-api/arouter-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/arouter/arouter-compiler/arouter-compiler.iml" filepath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/arouter-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/custom.iml" filepath="$PROJECT_DIR$/custom/custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/http/http.iml" filepath="$PROJECT_DIR$/http/http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/imageview/imageview.iml" filepath="$PROJECT_DIR$/custom/imageview/imageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/opensource.iml" filepath="$PROJECT_DIR$/opensource/opensource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/platform/platform.iml" filepath="$PROJECT_DIR$/opensource/platform/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/pull/pull.iml" filepath="$PROJECT_DIR$/custom/pull/pull.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/recycler/recycler.iml" filepath="$PROJECT_DIR$/custom/recycler/recycler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/texture/texture.iml" filepath="$PROJECT_DIR$/custom/texture/texture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/utils/utils.iml" filepath="$PROJECT_DIR$/opensource/utils/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/viewgroup/viewgroup.iml" filepath="$PROJECT_DIR$/custom/viewgroup/viewgroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensource/vlayout/vlayout.iml" filepath="$PROJECT_DIR$/opensource/vlayout/vlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom/widget/widget.iml" filepath="$PROJECT_DIR$/custom/widget/widget.iml" />
     </modules>
   </component>
 </project>

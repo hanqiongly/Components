@@ -20,15 +20,15 @@ public class FirstActivity extends Activity{
     private static final String tag = "Test_A";
 
     private void initSetting() {
-        if (Build.VERSION.SDK_INT < 21 && findViewById(R.id.status_bar) != null) {
-            findViewById(R.id.status_bar).setVisibility(View.GONE);
-            int statusBarHeight = ExtDeviceUtil.getStatusBarHeight(this);
-            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setPadding(0, statusBarHeight, 0, 0);
-            AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams) toolbar.getLayoutParams();
-            params.setScrollFlags(0);
-            toolbar.setLayoutParams(params);
-        }
+//        if (Build.VERSION.SDK_INT < 21 && findViewById(R.id.status_bar) != null) {
+//            findViewById(R.id.status_bar).setVisibility(View.GONE);
+//            int statusBarHeight = ExtDeviceUtil.getStatusBarHeight(this);
+//            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//            toolbar.setPadding(0, statusBarHeight, 0, 0);
+//            AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams) toolbar.getLayoutParams();
+//            params.setScrollFlags(0);
+//            toolbar.setLayoutParams(params);
+//        }
     }
 
     @Override
