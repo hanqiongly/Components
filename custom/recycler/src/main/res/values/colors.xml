@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!-- 搜索相关的颜色值 -->
+    <color name="search_key_suggest_brand_color">#ff407e</color>
+    <color name="search_suggest_brand_info_color">#111111</color>
+    <color name="search_suggest_info_color">#888888</color>
+    <color name="search_suggest_key_seprator_color">#eeeeee</color>
+    <color name="search_result_list_background_color">#f4f4f4</color>
+    <color name="search_result_high_list_empty_view_stroke_color">#979797</color>
+    <color name="search_result_high_list_empty_view_fills_color">#d8d8d8</color>
+    <color name="search_result_menu_view_default_color">#333333</color>
+    <color name="search_result_menu_view_selected_color">@color/search_key_suggest_brand_color</color>
+    <color name="search_result_condition_menu_cell_background">#7f000000</color>
+</resources>

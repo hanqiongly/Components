@@ -1,0 +1,19 @@
+include ':app', ':http'
+include ':analysis'
+
+include ':custom:texture'
+include ':custom:recycler'
+include ':custom:animator'
+include ':custom:pull'
+include ':custom:imageview'
+include ':custom:widget'
+include ':custom:viewgroup'
+
+include ':opensource:platform'
+include ':opensource:utils'
+include ':opensource:vlayout'
+include ':opensource:arouter'
+include ':opensource:arouter:arouter-annotation'
+include ':opensource:arouter:arouter-compiler'
+include ':opensource:arouter:arouter-api'
+

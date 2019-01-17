@@ -1,0 +1,1441 @@
+package com.jack.imageview;
+
+import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+/**
+ * Created by liuyang on 2017/11/6.
+ */
+
+public class DragFollowImageView extends RelativeLayout {
+    private static final String TAG = "t_DragFollowImage";
+
+    private int mMaxWidth;
+    private int mMaxHeight;
+    ImageView mMediaView;
+    View mCloseView;
+    boolean hasGenerateParentsBorder = false;
+
+//    private int startX;
+//    private int startY;
+//    private int startL;//初始时左上X，相对于父容器
+//    private int startT;//初始时左上Y
+//    private int startR;//初始时右下X
+//    private int startB;//初始时右下X
+//    private int stopX;
+//    private int stopY;
+
+    private int mParentLeft = 0;
+    private int mParentTop = 0;
+    private int mParentRight = 0;
+    private int mParentBottom = 0;
+
+
+    public DragFollowImageView(Context context) {
+        this(context, null);
+    }
+
+    public DragFollowImageView(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public DragFollowImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        constructChildren(context);
+    }
+
+    private void constructChildren(Context context) {
+        LayoutParams paramImage = new LayoutParams(LayoutParams.WRAP_CONTENT,
+                LayoutParams.MATCH_PARENT);
+        paramImage.addRule(ABOVE, R.id.main_page_float_view_close);
+        paramImage.addRule(CENTER_HORIZONTAL, 1);
+        mMediaView = new ImageView(context);
+        mMediaView.setLayoutParams(paramImage);
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) context.getResources().getDrawable(R.drawable.for_test);
+        mMediaView.setImageBitmap(bitmapDrawable.getBitmap());
+        mMediaView.setId(R.id.main_page_float_view_image);
+
+        LayoutParams paramCloseView = new LayoutParams(36, 36);
+        paramCloseView.addRule(CENTER_HORIZONTAL, 1);
+        paramCloseView.addRule(ALIGN_PARENT_BOTTOM, 1);
+        mCloseView = new TextView(context);
+        mCloseView.setBackgroundResource(R.drawable.open_shop_tip_cancel);
+        mCloseView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                setVisibility(GONE);
+            }
+        });
+        mCloseView.setLayoutParams(paramCloseView);
+        mCloseView.setId(R.id.main_page_float_view_close);
+        addView(mMediaView);
+        addView(mCloseView);
+    }
+
+    private void getParentBorders(MotionEvent event, int left, int top, int right, int bottom) {
+
+        int eventXInScreen = (int) event.getRawX();
+        int eventXInView = (int) event.getX();
+
+        mParentLeft = eventXInScreen - eventXInView - left;
+        if (mParentLeft < 0) {
+            mParentLeft = 0;
+        }
+
+        int eventYInScreen = (int) event.getRawY();
+        int eventYInView = (int) event.getY();
+        mParentTop = eventYInScreen - eventYInView - top;
+        if (mParentTop < 0) {
+            mParentTop = 0;
+        }
+
+    }
+
+//    int startX = 0;
+//    int startY = 0;
+//    int startL = 0;
+//    int startT = 0;
+//    int startR = 0;
+//    int startB = 0;
+//    int stopX = 0;
+//    int stopY = 0;
+
+    //处理当前的控件触摸事件
+    public boolean onTouchEvent(MotionEvent event) {
+        int startX = 0;
+        int startY = 0;
+        int startL = 0;
+        int startT = 0;
+        int startR = 0;
+        int startB = 0;
+        int action = event.getAction();
+
+        switch (action) {
+            case MotionEvent.ACTION_DOWN:
+                startX = (int) event.getRawX();//相对于屏幕的x坐标,getX()是相对于组件的坐标
+                startY = (int) event.getRawY();
+                startL = getLeft();
+                startT = getTop();
+                startR = getRight();
+                startB = getBottom();
+//                if (!hasGenerateParentsBorder) {
+//                    getParentBorders(event, startL, startT, startR, startB);
+//                    hasGenerateParentsBorder = true;
+//                }
+                Log.d(TAG, "x:" + startX + ",rawX," + event.getRawX() + ",left:" + getLeft());
+                break;
+            case MotionEvent.ACTION_MOVE:
+            case MotionEvent.ACTION_UP:
+                int stopX = (int) event.getRawX();
+                int stopY = (int) event.getRawY();
+                int deltaX = stopX - startX;//拖动偏移量
+                int deltaY = stopY - startY;
+                this.moveToPosition(startL + deltaX, startT + deltaY, startR + deltaX, startB + deltaY);
+//                stopX = (int) event.getRawX();
+//                stopY = (int) event.getRawY();
+//                invalidate();
+                break;
+        }
+        return true;
+    }
+
+    private boolean isAreaBeyondParent(int left, int top, int right, int bottom) {
+        if (left < mParentLeft || top < mParentTop /*|| right > mParentRight || bottom > mParentBottom*/) {
+            return true;
+        }
+        return false;
+    }
+
+    private void moveToPosition(int left, int top, int right, int bottom) {
+//        if (isAreaBeyondParent(left, top, right, bottom)) {
+//            return;
+//        }
+        this.layout(left, top, right, bottom);
+    }
+
+}
+
+
+=================================================Success ====================================
+
+package com.jack.imageview;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Rect;
+import android.graphics.drawable.BitmapDrawable;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+/**
+ * Created by liuyang on 2017/11/6.
+ */
+
+public class DragFollowImageView extends RelativeLayout {
+    private static final String TAG = "t_DragFollowImage";
+    private Rect mDragArea = null; //在父布局中能够拖动的范围
+    ImageView mMediaView;
+    ImageView mCloseView;
+    int maxWidth ;
+    int maxheight;
+    float imageHeightRatio;
+
+    int startX = 0;
+    int startY = 0;
+    int startL = 0;
+    int startT = 0;
+    int startR = 0;
+    int startB = 0;
+    int stopX = 0;
+    int stopY = 0;
+
+    public DragFollowImageView(Context context) {
+        this(context, null);
+    }
+
+    public DragFollowImageView(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public DragFollowImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DragFollowImageView);
+        maxWidth = (int) typedArray.getDimension(R.styleable.DragFollowImageView_maxWidth, -1);
+        maxheight = (int) typedArray.getDimension(R.styleable.DragFollowImageView_maxHeight, -1);
+        imageHeightRatio = typedArray.getFloat(R.styleable.DragFollowImageView_imageHeightRatio, -1.0f);
+        typedArray.recycle();
+        constructChildren(context);
+    }
+
+    private void constructChildren(Context context) {
+        mMediaView = new ImageView(context);
+        mCloseView = new ImageView(context);
+
+        LayoutParams paramImage = new LayoutParams(LayoutParams.WRAP_CONTENT,
+                LayoutParams.MATCH_PARENT);
+        paramImage.addRule(ABOVE, R.id.main_page_float_view_close);
+        paramImage.addRule(CENTER_HORIZONTAL, 1);
+
+        mMediaView.setLayoutParams(paramImage);
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) context.getResources().getDrawable(R.drawable.for_test);
+        mMediaView.setImageBitmap(bitmapDrawable.getBitmap());
+        mMediaView.setId(R.id.main_page_float_view_image);
+        if (maxWidth > 0) {
+            mMediaView.setMaxWidth(maxWidth);
+            mCloseView.setMaxWidth(maxWidth);
+        }
+
+        if (maxheight > 0) {
+            if (imageHeightRatio <= 0) {
+                imageHeightRatio = 0.8f;
+            }
+            mMediaView.setMaxHeight((int)(maxheight * imageHeightRatio));
+            mCloseView.setMaxHeight((int)(maxheight * (1.0f - imageHeightRatio)));
+        }
+        mMediaView.setMaxHeight(dip2px(getContext(), 50));
+
+        LayoutParams paramCloseView = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        paramCloseView.addRule(CENTER_HORIZONTAL, 1);
+        paramCloseView.addRule(ALIGN_PARENT_BOTTOM, 1);
+
+
+
+        mCloseView.setBackgroundResource(R.drawable.open_shop_tip_cancel);
+        mCloseView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                setVisibility(GONE);
+            }
+        });
+        mCloseView.setLayoutParams(paramCloseView);
+        mCloseView.setId(R.id.main_page_float_view_close);
+        addView(mMediaView);
+        addView(mCloseView);
+    }
+
+
+    //处理当前的控件触摸事件
+    public boolean onTouchEvent(MotionEvent event) {
+        int action = event.getAction();
+        switch (action){
+            case MotionEvent.ACTION_DOWN:
+                startX = (int) event.getRawX();//相对于屏幕的x坐标,getX()是相对于组件的坐标
+                startY = (int) event.getRawY();
+                startL = getLeft();
+                startT = getTop();
+                startR = getRight();
+                startB = getBottom();
+                break;
+            case MotionEvent.ACTION_MOVE:
+            case MotionEvent.ACTION_UP:
+                stopX = (int) event.getRawX();
+                stopY = (int) event.getRawY();
+                int deltaX = stopX - startX;//拖动偏移量
+                int deltaY = stopY - startY;
+                moveToPosition(startL+deltaX,startT+deltaY,startR+deltaX,startB+deltaY);
+                break;
+        }
+        return true;
+    }
+
+
+    public void setDragableArea(Rect rect) {
+        mDragArea = rect;
+    }
+
+    private void moveToPosition(int left, int top, int right, int bottom) {
+        if (mDragArea == null) {
+            return ;
+        }
+        if (left < mDragArea.left) {
+            left = mDragArea.left;
+            right = left + getWidth();
+        }
+
+        if (top < mDragArea.top) {
+            top = mDragArea.top;
+            bottom = top + getHeight();
+        }
+
+        if (right > mDragArea.right){
+            right = mDragArea.right;
+            left = right - getWidth();
+        }
+
+        if (bottom > mDragArea.bottom) {
+            bottom = mDragArea.bottom;
+            top = bottom - getHeight();
+        }
+
+        this.layout(left, top, right, bottom);
+    }
+
+    public int dip2px(Context context,float dpValue){
+
+        final float scale=context.getResources().getDisplayMetrics().density;
+
+        return (int)(dpValue*scale+0.5f);
+
+    }
+
+}
+
+====================================可以拖动的ViewGroup.bak 测试可用========================================
+
+package com.jack.imageview;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
+import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+
+import com.jack.base.utils.DisplayUtils;
+
+/**
+ * Created by liuyang on 2017/11/9.
+ */
+
+public class DragFollowRelativeLayout extends RelativeLayout {
+    private static final String TAG = "t_DragFollowImage";
+    private Rect mDragArea = null; //在父布局中能够拖动的范围
+    ImageView mMediaView;
+    ImageView mCloseView;
+
+    int mDownEventX = 0;
+    int mDownEventY = 0;
+    int mLeftBorder = 0;
+    int mTopBorder = 0;
+    int mRightBorder = 0;
+    int mBottomBorder = 0;
+    int mMediaMaxSize = 0;
+    int mMaxSize = 0;
+
+    private WaveAnimator mWaveAnim;
+    private boolean mNeedCreateAnim = false;
+    private OnClickListener mListener;
+
+    private DragFollowRelativeLayout(Context context) {
+        this(context, null);
+    }
+
+    public DragFollowRelativeLayout(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        setWillNotDraw(false);
+    }
+
+    public DragFollowRelativeLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DragFollowImageView);
+        int maxWidth = -1;
+        int maxHeight = -1;
+        float ratio = -1.0f;
+        if (typedArray != null) {
+            maxWidth = (int) typedArray.getDimension(R.styleable.DragFollowRelativeLayout_floatViewMaxWidth, -1);
+            maxHeight = (int) typedArray.getDimension(R.styleable.DragFollowRelativeLayout_floatViewMaxHeight, -1);
+            ratio = typedArray.getFloat(R.styleable.DragFollowRelativeLayout_r_imageHeightRatio, -1.0f);
+            typedArray.recycle();
+        }
+        constructChildren(context, maxWidth, maxHeight, ratio);
+//        createAnimation(maxWidth);
+    }
+
+
+    private void createAnimation(int maxWidth) {
+        int mediaLeft = mMediaView.getLeft();
+        int mediaRight = mMediaView.getRight();
+        int mediaTop = mMediaView.getTop();
+        int mediaBottom = mMediaView.getBottom();
+
+        int circleInnerRadius = (int) ((mediaRight - mediaLeft) * 1.42f);
+        if (circleInnerRadius <= 0) {
+            //呼吸灯最内圈的直径计算
+            int measuredTargetRadius = (int) (mMediaView.getMeasuredWidth() * 1.42f);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                circleInnerRadius = Math.min(measuredTargetRadius, mMediaView.getMaxWidth());
+            } else {
+                circleInnerRadius = Math.min(measuredTargetRadius, (int) (maxWidth * 0.8f));
+            }
+        }
+        int centerX = mediaLeft + (mediaRight - mediaLeft) /2;
+        int centerY = mediaTop + (mediaBottom - mediaTop) / 2;
+
+        mWaveAnim = new WaveAnimator(getContext(), circleInnerRadius + DisplayUtils.dp2px(getContext(), 20) * 2, circleInnerRadius, centerX, centerY);
+    }
+
+    public void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        if (mMediaView.getLeft() > 0) {
+            Log.d("tag", "onLayout() mediaLeft :" + mMediaView.getLeft() + " mediaRight :" + mMediaView.getRight() + "mediaTop:" + mMediaView.getTop() + " mediaBottom :" + mMediaView.getBottom());
+            if (mWaveAnim == null && mNeedCreateAnim) {
+                createAnimation(mMaxSize);
+                mWaveAnim.initArray();
+                mWaveAnim.start();
+            }
+        }
+    }
+
+    private void startAnimator() {
+        if (mWaveAnim != null)
+            mWaveAnim.start();
+    }
+
+    private void constructChildren(Context context, int width, int height, float ratio) {
+        mMediaView = new ImageView(context);
+        mCloseView = new ImageView(context);
+        mMediaView.setAdjustViewBounds(true);
+        mCloseView.setAdjustViewBounds(true);
+        resetWidgetSize(width, height, ratio);
+
+//        int mockSize = DisplayUtils.dp2px(getContext(), 65);
+//        LayoutParams paramImage = new LayoutParams(mockSize, mockSize);
+        LayoutParams paramImage = new LayoutParams(LayoutParams.WRAP_CONTENT,
+                LayoutParams.WRAP_CONTENT);
+//        paramImage.addRule(CENTER_IN_PARENT, 1);
+        paramImage.addRule(BELOW, R.id.main_page_float_view_close);
+        int marginMedia = DisplayUtils.dp2px(getContext(), 20);
+        paramImage.bottomMargin = marginMedia;
+        paramImage.leftMargin = marginMedia;
+        paramImage.rightMargin = marginMedia;
+        mMediaView.setLayoutParams(paramImage);
+        //todo construct image bitmap
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) context.getResources().getDrawable(R.drawable.for_test);
+        mMediaView.setImageBitmap(bitmapDrawable.getBitmap());
+        mMediaView.setId(R.id.main_page_float_view_image);
+
+        int sizeCloseView = DisplayUtils.dp2px(getContext(), 18);
+        LayoutParams paramCloseView = new LayoutParams(sizeCloseView, sizeCloseView);
+        paramCloseView.addRule(ALIGN_PARENT_TOP, 1);
+
+        paramCloseView.addRule(ALIGN_RIGHT, R.id.main_page_float_view_image);
+        paramCloseView.bottomMargin = DisplayUtils.dp2px(getContext(), 8);
+
+//        paramCloseView.addRule(ALIGN_PARENT_RIGHT, 1);
+
+        mCloseView.setBackgroundResource(R.drawable.open_shop_tip_cancel);
+        mCloseView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                setVisibility(GONE);
+            }
+        });
+        mCloseView.setLayoutParams(paramCloseView);
+        mCloseView.setId(R.id.main_page_float_view_close);
+        addView(mMediaView);
+        addView(mCloseView);
+    }
+
+    private void resetWidgetSize(int width, int height, float ratio) {
+//        if (width > 0) {
+        mMediaView.setMaxWidth(width);
+        mMediaView.setMaxHeight(height);
+//            mCloseView.setMaxWidth(width);
+//        }
+
+//        if (height > 0) {
+//            if (ratio <= 0) {
+//                ratio = 0.85f;
+//            }
+//            mMediaView.setMaxHeight((int) (height * ratio));
+//            mCloseView.setMaxHeight((int) (height * (1.0f - ratio)));
+//        } else {
+//            mMediaView.setMaxHeight(65);
+//        }
+    }
+
+    private void setMaxSize(int maxWidth, int maxHeight, float ratio) {
+        resetWidgetSize(maxWidth, maxHeight, ratio);
+
+    }
+
+    private void setImageUrl(String url) {
+        if (TextUtils.isEmpty(url)) {
+            return;
+        }
+//        ImageDisplayUtil.displayImage(mMediaView, url);
+    }
+
+    //处理当前的控件触摸事件
+    private boolean hasClickEventHappened = false;
+        private long mDownEventTime = 0;
+        int mDeltaX = 0;
+        int mDeltaY = 0;
+        //处理当前的控件触摸事件
+        public boolean onTouchEvent(MotionEvent event) {
+            int action = event.getAction();
+
+
+            switch (action) {
+                case MotionEvent.ACTION_DOWN:
+                    mDownEventTime = System.currentTimeMillis();
+                    hasClickEventHappened = false;
+                    mDownEventX = (int) event.getRawX();//相对于屏幕的x坐标,getX()是相对于组件的坐标
+                    mDownEventY = (int) event.getRawY();
+                    mLeftBorder = getLeft();
+                    mTopBorder = getTop();
+                    mRightBorder = getRight();
+                    mBottomBorder = getBottom();
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    int stopX = (int) event.getRawX();
+                    int stopY = (int) event.getRawY();
+                    mDeltaX = stopX - mDownEventX;//拖动偏移量
+                    mDeltaY = stopY - mDownEventY;
+                    moveToPosition(mLeftBorder + mDeltaX, mTopBorder + mDeltaY,
+                            mRightBorder + mDeltaX, mBottomBorder + mDeltaY);
+                    break;
+                case MotionEvent.ACTION_UP:
+                    updateLayoutParams();
+                        if (!hasClickEventHappened && judgeClickEvent(mDownEventTime, mDeltaX, mDeltaY)) {
+                            performClickAction(this);
+                        }
+                    hasClickEventHappened = true;
+                    break;
+            }
+
+            return true;
+        }
+
+        private boolean judgeClickEvent(long downEventTime, int xDist, int yDist) {
+            boolean isClickEvent = System.currentTimeMillis() - downEventTime < 800;
+            isClickEvent = isClickEvent && Math.abs(xDist) < 5 && Math.abs(yDist) < 5;
+            return isClickEvent;
+        }
+
+        private void performClickAction(View view) {
+            if (mListener != null) {
+                mListener.onClick(view);
+            }
+        }
+
+    public void onDraw(Canvas canvas) {
+        Log.d(TAG, " onDraw() ");
+        super.onDraw(canvas);
+
+        if (mWaveAnim != null) {
+            mWaveAnim.draw(canvas);
+        }
+    }
+
+    private void updateLayoutParams() {
+        ViewGroup.LayoutParams layoutParams = getLayoutParams();
+        if (layoutParams instanceof FrameLayout.LayoutParams) {
+            FrameLayout.LayoutParams frameLayoutParams = new FrameLayout.LayoutParams(getWidth(), getHeight());
+            frameLayoutParams.leftMargin = getLeft();
+            frameLayoutParams.topMargin = getTop();
+            setLayoutParams(frameLayoutParams);
+        } else if (layoutParams instanceof LinearLayout.LayoutParams) {
+            LinearLayout.LayoutParams frameLayoutParams = new LinearLayout.LayoutParams(getWidth(), getHeight());
+            frameLayoutParams.leftMargin = getLeft();
+            frameLayoutParams.topMargin = getTop();
+            setLayoutParams(frameLayoutParams);
+        } else if (layoutParams instanceof RelativeLayout.LayoutParams) {
+            RelativeLayout.LayoutParams frameLayoutParams = new RelativeLayout.LayoutParams(getWidth(), getHeight());
+            frameLayoutParams.leftMargin = getLeft();
+            frameLayoutParams.topMargin = getTop();
+            setLayoutParams(frameLayoutParams);
+        }
+    }
+
+    private void setOnCloseListener(OnClickListener listener) {
+        mCloseView.setOnClickListener(listener);
+    }
+
+    private void setOnImageClickListener(OnClickListener listener) {
+        mMediaView.setOnClickListener(listener);
+    }
+
+    private void setDragableArea(Rect rect) {
+        mDragArea = rect;
+        Log.d(TAG, "borders left:" + rect.left + " top :" + rect.top + " right:" + rect.right + " bottom :" + rect.bottom);
+    }
+
+    private void moveToPosition(int left, int top, int right, int bottom) {
+        Log.d(TAG, "target border : left " + left + " top " + top + " right " + right + " bottom " + bottom);
+        if (mDragArea == null) {
+            return;
+        }
+        if (left < mDragArea.left) {
+            left = mDragArea.left;
+            right = left + getWidth();
+        }
+
+        if (top < mDragArea.top) {
+            top = mDragArea.top;
+            bottom = top + getHeight();
+        }
+
+        if (right > mDragArea.right) {
+            right = mDragArea.right;
+            left = right - getWidth();
+        }
+
+        if (bottom > mDragArea.bottom) {
+            bottom = mDragArea.bottom;
+            top = bottom - getHeight();
+        }
+
+        this.layout(left, top, right, bottom);
+    }
+
+    private void attachToParent(FrameLayout parent, int maxSize) {
+        if (maxSize <= 0) {
+            maxSize = DisplayUtils.dp2px(getContext(), 125);
+        }
+        constructChildren(getContext(), (int) (maxSize * 0.8f), (int) (maxSize * 0.8f), -1.0f);
+
+        int margins = 0;
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.BOTTOM | Gravity.RIGHT;
+        params.bottomMargin = margins;
+        params.rightMargin = margins;
+        setLayoutParams(params);
+
+        parent.addView(this);
+    }
+
+    public void onMeasure(int width, int height) {
+        super.onMeasure(width, height);
+    }
+
+    public static class Builder {
+        private FrameLayout mParent;
+        private View.OnClickListener mOnClickListener;
+        private int mMaxSize;
+        private int mDragBttomBorder;
+        private int mDragLeftBorder = 0;
+        private int mDragTopBorder = 0;
+        private int mDragRightBorder;
+        private boolean needCalStatusBar = false;
+        private String mMediaUrl;
+        private boolean mNeedCreateAnimator = false;
+
+        public Builder(FrameLayout parent) {
+            mParent = parent;
+            mMaxSize = DisplayUtils.dp2px(parent.getContext(), 100);
+        }
+
+        public Builder maxSize(int maxSize) {
+            if (maxSize > 0) {
+                mMaxSize = maxSize;
+            }
+            return this;
+        }
+
+        public Builder onClickListener(View.OnClickListener listener) {
+            mOnClickListener = listener;
+            return this;
+        }
+
+        public Builder leftBorderMargin(int left) {
+            mDragLeftBorder = left;
+            return this;
+        }
+
+        public Builder topBorderMargin(int top) {
+            mDragTopBorder = top;
+            return this;
+        }
+
+        public Builder rightBorderMargin(int right) {
+            mDragRightBorder = right;
+            return this;
+        }
+
+        public Builder bottomBorderMargin(int bottom) {
+            mDragBttomBorder = bottom;
+            return this;
+        }
+
+        public Builder needCaculateStatusBar(boolean needCal) {
+            needCalStatusBar = needCal;
+            return this;
+        }
+
+        public Builder mediaSourceUrl(String url) {
+            mMediaUrl = url;
+            return this;
+        }
+
+        //只有在服务端的数据是圆圈的时候才需要执行动画
+        public Builder needAnimator(boolean needAnimator) {
+            mNeedCreateAnimator = needAnimator;
+            return this;
+        }
+
+        private int getSystemStatusbarHeight() {
+            int result = 0;
+            int resourceId = mParent.getResources().getIdentifier("status_bar_height", "dimen", "android");
+            if (resourceId > 0) {
+                result = mParent.getResources().getDimensionPixelSize(resourceId);
+            }
+            return result;
+        }
+
+        private int generateDragBottomBorder() {
+            int dragBottom = DisplayUtils.getScreenHeight(mParent.getContext());
+            if (needCalStatusBar) {
+                dragBottom = dragBottom - getSystemStatusbarHeight();
+            }
+            return dragBottom - mDragBttomBorder;
+        }
+
+        private int generateDragRightBorder() {
+            return DisplayUtils.getScreenWidth(mParent.getContext()) - mDragRightBorder;
+        }
+
+        final public DragFollowRelativeLayout create() {
+            DragFollowRelativeLayout dragFollowRelativeLayout = new DragFollowRelativeLayout(mParent.getContext());
+            // TODO: 2017/11/11 delete current mock data
+            mNeedCreateAnimator = true;
+            dragFollowRelativeLayout.mNeedCreateAnim = mNeedCreateAnimator;
+            dragFollowRelativeLayout.mMaxSize = mMaxSize;
+            Rect rect = new Rect();
+            rect.bottom = generateDragBottomBorder();
+            rect.left = mDragLeftBorder;
+            rect.top = mDragTopBorder;
+            rect.right = generateDragRightBorder();
+            dragFollowRelativeLayout.setDragableArea(rect);
+            dragFollowRelativeLayout.attachToParent(mParent, mMaxSize);
+
+
+//            if (mNeedCreateAnimator) {
+//                dragFollowRelativeLayout.createAnimation(mMaxSize);
+//                dragFollowRelativeLayout.startAnimator();
+//            }
+
+            dragFollowRelativeLayout.setOnClickListener(mOnClickListener);
+            dragFollowRelativeLayout.setImageUrl(mMediaUrl);
+            return dragFollowRelativeLayout;
+        }
+    }
+
+    class WaveAnimator {
+        private boolean mRunning = false;
+
+        private int[] mStrokeWidthArr;
+        private int mMaxStrokeWidth;
+        private int mRippleCount;
+        private int mRippleSpacing;
+
+        private Paint mPaint;
+
+        private int mWidth;
+        private int mHeight;
+        int mCenterX;
+        int mCenterY;
+
+        private View mView;
+
+        private int mCenterWidth;
+
+        WaveAnimator(Context context, int maxWidgetSize, int minCircleRadus, int centerX, int centerY) {
+            initAttrs(context);
+            mMaxStrokeWidth = maxWidgetSize - (int) (maxWidgetSize * 0.8f);
+            mWidth = maxWidgetSize;
+            mHeight = maxWidgetSize;
+            mCenterX = centerX > 0 ? centerX : mWidth / 2;
+            mCenterY = centerY > 0 ? centerY : mHeight / 2;
+            mCenterWidth = minCircleRadus > 0 ? minCircleRadus : maxWidgetSize / 2;
+        }
+
+        private void draw(Canvas canvas) {
+            if (mRunning) {
+                drawRipple(canvas);
+                invalidate();
+            }
+        }
+
+        private void initAttrs(Context context) {
+            int waveColor = ContextCompat.getColor(context, R.color.color_wave_color);
+
+//            mCenterWidth = DisplayUtils.dp2px(context, 150);
+            mRippleCount = 5;
+            mRippleSpacing = DisplayUtils.dp2px(context, 16);
+            mRunning = false;
+
+
+            mPaint = new Paint();
+            mPaint.setAntiAlias(true);
+            mPaint.setStyle(Paint.Style.STROKE);
+            mPaint.setColor(waveColor);
+        }
+
+        private void drawRipple(Canvas canvas) {
+            for (int strokeWidth : mStrokeWidthArr) {
+                if (strokeWidth < 0) {
+                    continue;
+                }
+                mPaint.setStrokeWidth(strokeWidth);
+                mPaint.setAlpha(255 - 255 * strokeWidth / mMaxStrokeWidth);
+                canvas.drawCircle(mCenterX, mCenterY, mCenterWidth / 2 + strokeWidth / 2,
+                        mPaint);
+            }
+
+            for (int i = 0; i < mStrokeWidthArr.length; i++) {
+                if ((mStrokeWidthArr[i] += 4) > mMaxStrokeWidth) {
+                    mStrokeWidthArr[i] = 0;
+                }
+            }
+        }
+
+        public void start() {
+            if (!mRunning) {
+                mRunning = true;
+                clearMsg();
+                invalidate();
+            }
+        }
+
+        private void initArray() {
+            mStrokeWidthArr = new int[mRippleCount];
+            for (int i = 0; i < mStrokeWidthArr.length; i++) {
+                mStrokeWidthArr[i] = -mMaxStrokeWidth / mRippleCount * i;
+            }
+        }
+
+        public void stop() {
+            if (mRunning) {
+                mRunning = false;
+                clearMsg();
+                initArray();
+                postInvalidate();
+            }
+        }
+
+        private void clearMsg() {
+            if (getHandler() != null) {
+                getHandler().removeCallbacksAndMessages(null);
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+===========================================Drag Follow With Wave Animator Enable Gif ===========================
+package com.jack.imageview;
+
+/**
+ * Created by liuyang on 2017/11/16.
+ */
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.os.Build;
+import android.support.annotation.Nullable;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+
+import java.util.TimerTask;
+
+import com.jack.base.utils.DisplayUtils;
+import com.nostra13.universalimageloader.core.assist.FailReason;
+import com.nostra13.universalimageloader.core.imageaware.BaseBitmapDrawable;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+
+/**
+ * Created by liuyang on 2017/11/8.
+ * 需要完善当前的ImageLoader 以及显示当前的gif逻辑
+ */
+
+public class DragRelativeViewAddGif extends RelativeLayout {
+    private static final String TAG = "t_DragFollowImage";
+    private Rect mDragArea = null; //在父布局中能够拖动的范围
+    ImageView mMediaView;
+    ImageView mCloseView;
+
+    int mDownEventX = 0;
+    int mDownEventY = 0;
+    int mLeftBorder = 0;
+    int mTopBorder = 0;
+    int mRightBorder = 0;
+    int mBottomBorder = 0;
+
+    private WaveAnimator mWaveAnim;
+    private boolean hasClickEventHappened = false;
+    private long mDownEventTime = 0;
+    int mDeltaX = 0;
+    int mDeltaY = 0;
+    private OnClickListener mListener;
+    private int mAnimationColor;
+    private boolean mCanUserClose = true;
+    private boolean mNeedAnimation = false;
+
+    private DragRelativeViewAddGif(Context context) {
+        this(context, null);
+    }
+
+    public DragRelativeViewAddGif(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        setWillNotDraw(false);
+    }
+
+    private void createAnimation(int paintColor) {
+        int mediaLeft = mMediaView.getLeft();
+        int mediaRight = mMediaView.getRight();
+        int mediaTop = mMediaView.getTop();
+        int mediaBottom = mMediaView.getBottom();
+
+        int circleInnerWidth = mediaRight - mediaLeft;
+        if (circleInnerWidth <= 0) {
+            //呼吸灯最内圈的直径计算
+            int measuredTargetRadius = mMediaView.getMeasuredWidth();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                circleInnerWidth = Math.min(measuredTargetRadius, mMediaView.getMaxWidth());
+            } else {
+                circleInnerWidth = Math.min(measuredTargetRadius, DisplayUtils.dp2px(getContext(), 100));
+            }
+        }
+        int centerX = mediaLeft + (mediaRight - mediaLeft) / 2;
+        int centerY = mediaTop + (mediaBottom - mediaTop) / 2;
+
+        mWaveAnim = new WaveAnimator(circleInnerWidth + DisplayUtils.dp2px(getContext(), 40) * 2, circleInnerWidth, centerX, centerY);
+        mWaveAnim.setPaintColor(paintColor);
+    }
+
+    public void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        if (!mNeedAnimation) {
+            return;
+        }
+        if (mMediaView != null && mMediaView.getRight() > 0) {
+            if (mWaveAnim == null) {
+                createAnimation(mAnimationColor);
+                mWaveAnim.initArray();
+                mWaveAnim.start();
+            }
+        }
+    }
+
+    private void constructChildren(Context context, ImageView imageView) {
+        if (imageView == null) {
+            return;
+        }
+
+        if (mCanUserClose) {
+            mCloseView = new ImageView(context);
+            mCloseView.setAdjustViewBounds(true);
+            int sizeCloseView = DisplayUtils.dp2px(getContext(), 18);
+            LayoutParams paramCloseView = new LayoutParams(sizeCloseView, sizeCloseView);
+            paramCloseView.addRule(ALIGN_PARENT_TOP, 1);
+
+            paramCloseView.addRule(ALIGN_RIGHT, R.id.main_page_float_view_image);
+            paramCloseView.bottomMargin = DisplayUtils.dp2px(getContext(), 8);
+
+            mCloseView.setBackgroundResource(R.drawable.open_shop_tip_cancel);
+            mCloseView.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    setVisibility(GONE);
+                }
+            });
+            mCloseView.setLayoutParams(paramCloseView);
+            mCloseView.setId(R.id.main_page_float_view_close);
+            addView(mCloseView);
+        }
+
+        mMediaView = imageView;
+        LayoutParams paramImage = new LayoutParams(LayoutParams.WRAP_CONTENT,
+                LayoutParams.WRAP_CONTENT);
+        int marginMedia = DisplayUtils.dp2px(getContext(), 40);
+        if (mNeedAnimation) {
+            paramImage.topMargin = marginMedia;
+            paramImage.bottomMargin = marginMedia;
+            paramImage.leftMargin = marginMedia;
+            paramImage.rightMargin = marginMedia;
+        } else {
+            paramImage.addRule(CENTER_IN_PARENT, 1);
+        }
+        mMediaView.setLayoutParams(paramImage);
+        mMediaView.setId(R.id.main_page_float_view_image);
+
+        addView(mMediaView);
+
+    }
+
+    private void setOnClickedListener(OnClickListener listener) {
+        mListener = listener;
+    }
+
+    //处理当前的控件触摸事件
+    public boolean onTouchEvent(MotionEvent event) {
+        int action = event.getAction();
+
+        switch (action) {
+            case MotionEvent.ACTION_DOWN:
+                mDownEventTime = System.currentTimeMillis();
+                hasClickEventHappened = false;
+                mDownEventX = (int) event.getRawX();//相对于屏幕的x坐标,getX()是相对于组件的坐标
+                mDownEventY = (int) event.getRawY();
+                mLeftBorder = getLeft();
+                mTopBorder = getTop();
+                mRightBorder = getRight();
+                mBottomBorder = getBottom();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                int stopX = (int) event.getRawX();
+                int stopY = (int) event.getRawY();
+                mDeltaX = stopX - mDownEventX;//拖动偏移量
+                mDeltaY = stopY - mDownEventY;
+                moveToPosition(mLeftBorder + mDeltaX, mTopBorder + mDeltaY,
+                        mRightBorder + mDeltaX, mBottomBorder + mDeltaY);
+                break;
+            case MotionEvent.ACTION_UP:
+                updateLayoutParams();
+                if (!hasClickEventHappened && judgeClickEvent(mDownEventTime, mDeltaX, mDeltaY)) {
+                    performClickAction(this);
+                }
+                hasClickEventHappened = true;
+                break;
+        }
+        return true;
+    }
+
+    private boolean judgeClickEvent(long downEventTime, int xDist, int yDist) {
+        boolean isClickEvent = System.currentTimeMillis() - downEventTime < 800;
+        isClickEvent = isClickEvent && Math.abs(xDist) < 5 && Math.abs(yDist) < 5;
+        return isClickEvent;
+    }
+
+    private void performClickAction(View view) {
+        if (mListener != null) {
+            mListener.onClick(view);
+        }
+    }
+
+    public void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+        if (mWaveAnim != null) {
+            mWaveAnim.draw(canvas);
+        }
+    }
+
+    private void updateLayoutParams() {
+        ViewGroup.LayoutParams layoutParams = getLayoutParams();
+        if (layoutParams instanceof FrameLayout.LayoutParams) {
+            FrameLayout.LayoutParams frameLayoutParams = new FrameLayout.LayoutParams(getWidth(), getHeight());
+            frameLayoutParams.leftMargin = getLeft();
+            frameLayoutParams.topMargin = getTop();
+            setLayoutParams(frameLayoutParams);
+        } else if (layoutParams instanceof LinearLayout.LayoutParams) {
+            LinearLayout.LayoutParams frameLayoutParams = new LinearLayout.LayoutParams(getWidth(), getHeight());
+            frameLayoutParams.leftMargin = getLeft();
+            frameLayoutParams.topMargin = getTop();
+            setLayoutParams(frameLayoutParams);
+        } else if (layoutParams instanceof RelativeLayout.LayoutParams) {
+            RelativeLayout.LayoutParams frameLayoutParams = new RelativeLayout.LayoutParams(getWidth(), getHeight());
+            frameLayoutParams.leftMargin = getLeft();
+            frameLayoutParams.topMargin = getTop();
+            setLayoutParams(frameLayoutParams);
+        }
+    }
+
+    private void setDragableArea(Rect rect) {
+        mDragArea = rect;
+    }
+
+    private void moveToPosition(int left, int top, int right, int bottom) {
+        if (mDragArea == null) {
+            return;
+        }
+        if (left < mDragArea.left) {
+            left = mDragArea.left;
+            right = left + getWidth();
+        }
+
+        if (top < mDragArea.top) {
+            top = mDragArea.top;
+            bottom = top + getHeight();
+        }
+
+        if (right > mDragArea.right) {
+            right = mDragArea.right;
+            left = right - getWidth();
+        }
+
+        if (bottom > mDragArea.bottom) {
+            bottom = mDragArea.bottom;
+            top = bottom - getHeight();
+        }
+
+        this.layout(left, top, right, bottom);
+    }
+
+    public void attachToParent(FrameLayout parent) {
+        int margins = 0;
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.BOTTOM | Gravity.RIGHT;
+        params.bottomMargin = margins;
+        params.rightMargin = margins;
+        setLayoutParams(params);
+
+        parent.addView(this);
+    }
+
+    public static class Builder {
+        private View.OnClickListener mOnClickListener;
+        private int mDragBttomBorder;
+        private int mDragLeftBorder = 0;
+        private int mDragTopBorder = 0;
+        private int mDragRightBorder;
+        private boolean needCalStatusBar = false;
+        private String mBitmapUrl;
+        private Context mContext;
+        private long mStartTime;
+        private long mEndTime;
+        private String mAnimatorColor = "#00000000";
+        private boolean canCloseActivityView = true;
+
+        public Builder(Context context) {
+            mContext = context;
+        }
+
+        public Builder onClickListener(View.OnClickListener listener) {
+            mOnClickListener = listener;
+            return this;
+        }
+
+        public Builder canCloseActivity(boolean canClose) {
+            canCloseActivityView = canClose;
+            return this;
+        }
+
+        public Builder leftBorderMargin(int left) {
+            mDragLeftBorder = left;
+            return this;
+        }
+
+        public Builder topBorderMargin(int top) {
+            mDragTopBorder = top;
+            return this;
+        }
+
+        public Builder validityPeriod(long startTime, long endTime) {
+            mStartTime = startTime;
+            mEndTime = endTime;
+            return this;
+        }
+
+        public Builder rightBorderMargin(int right) {
+            mDragRightBorder = right;
+            return this;
+        }
+
+        public Builder animatorColor(String color) {
+            mAnimatorColor = color;
+            return this;
+        }
+
+        public Builder bottomBorderMargin(int bottom) {
+            mDragBttomBorder = bottom;
+            return this;
+        }
+
+        public Builder needCaculateStatusBar(boolean needCal) {
+            needCalStatusBar = needCal;
+            return this;
+        }
+
+        public Builder mediaBitmap(String url) {
+            mBitmapUrl = url;
+            return this;
+        }
+
+        private int generateDragBottomBorder() {
+            int dragBottom = DisplayUtils.getScreenHeight(mContext);
+            if (needCalStatusBar) {
+                dragBottom = dragBottom - DisplayUtils.getStatusBarHeight(mContext);
+            }
+            return dragBottom - mDragBttomBorder;
+        }
+
+        private int generateDragRightBorder() {
+            return DisplayUtils.getScreenWidth() - mDragRightBorder;
+        }
+
+        private void constructMediaView(String mediaUrl, final OnImageLoadedCompleteListener listener) {
+            if (TextUtils.isEmpty(mediaUrl)) {
+                listener.onImageLoadComplete(null);
+                return;
+            }
+            int maxSize = DisplayUtils.dp2px(mContext, 100);
+            final ImageView imageView = new ImageView(mContext);
+            imageView.setAdjustViewBounds(true);
+            imageView.setMaxHeight(maxSize);
+            imageView.setMaxHeight(maxSize);
+
+            ImageDisplayUtil.displayImage(imageView, mediaUrl, null, new SimpleImageLoadingListener() {
+                public void onLoadingStarted(String imageUri, View view) {
+                }
+
+                public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+                    listener.onImageLoadComplete(null);
+                }
+
+                public void onLoadingComplete(String imageUri, View view, BaseBitmapDrawable loadedImage) {
+                    if (loadedImage.hasValidBitmap()) {
+                        listener.onImageLoadComplete(imageView);
+                    } else {
+                        listener.onImageLoadComplete(null);
+                    }
+                }
+
+                public void onLoadingCancelled(String imageUri, View view) {
+                    listener.onImageLoadComplete(null);
+                }
+            });
+        }
+
+        //判断推送的活动的时效是否已经过去了
+        private boolean judgeNeedConstructLayout() {
+            boolean need = true;
+
+            long currentTime = System.currentTimeMillis();
+            if (currentTime > mEndTime) {
+                need = false;
+            }
+
+            return need;
+        }
+
+        OnImageLoadedCompleteListener onImageLoadedCompleteListener;
+
+        final public DragRelativeViewAddGif build() {
+            final DragRelativeViewAddGif dragRelativeViewAddGif = new DragRelativeViewAddGif(mContext);
+            Rect rect = new Rect();
+            rect.bottom = generateDragBottomBorder();
+            rect.left = mDragLeftBorder;
+            rect.top = mDragTopBorder;
+            rect.right = generateDragRightBorder();
+            dragRelativeViewAddGif.setDragableArea(rect);
+            dragRelativeViewAddGif.setOnClickedListener(mOnClickListener);
+
+            if (!TextUtils.isEmpty(mAnimatorColor)) {
+                try {
+                    dragRelativeViewAddGif.mAnimationColor = Color.parseColor(mAnimatorColor);
+                    dragRelativeViewAddGif.mNeedAnimation = true;
+                } catch (Exception e) {
+                    dragRelativeViewAddGif.mNeedAnimation = false;
+                }
+            } else {
+                dragRelativeViewAddGif.mNeedAnimation = false;
+            }
+            dragRelativeViewAddGif.mCanUserClose = canCloseActivityView;
+            onImageLoadedCompleteListener = new OnImageLoadedCompleteListener() {
+                @Override
+                public void onImageLoadComplete(ImageView imageView) {
+                    if (imageView == null) {
+                        // TODO: 2017/11/16 start scheduled request task
+                        return;
+                    }
+                    dragRelativeViewAddGif.constructChildren(mContext, imageView);
+                }
+            };
+
+            constructMediaView(mBitmapUrl, onImageLoadedCompleteListener);
+            return dragRelativeViewAddGif;
+        }
+
+        interface OnImageLoadedCompleteListener {
+            void onImageLoadComplete(ImageView imageView);
+        }
+    }
+
+    class WaveAnimator {
+        private boolean mRunning = false;
+
+        private int[] mStrokeWidthArr;
+        private int mMaxStrokeWidth;
+        private int mRippleCount;
+        private Paint mPaint;
+
+        private int mWidth;
+        private int mHeight;
+        int mCenterX;
+        int mCenterY;
+
+
+        private int mCenterWidth;
+
+        WaveAnimator(int maxWidgetSize, int minCircleWidth, int centerX, int centerY) {
+            initAttrs();
+            mMaxStrokeWidth = maxWidgetSize - (int) (maxWidgetSize * 0.8f);
+            mWidth = maxWidgetSize;
+            mHeight = maxWidgetSize;
+            mCenterX = centerX > 0 ? centerX : mWidth / 2;
+            mCenterY = centerY > 0 ? centerY : mHeight / 2;
+            mCenterWidth = minCircleWidth > 0 ? minCircleWidth : maxWidgetSize / 2;
+        }
+
+        private void draw(Canvas canvas) {
+            if (mRunning) {
+                drawRipple(canvas);
+                invalidate();
+            }
+        }
+
+        private void setPaintColor(int color) {
+            mPaint.setColor(color);
+        }
+
+        private void initAttrs() {
+
+            mRippleCount = 3;
+            mRunning = false;
+
+
+            mPaint = new Paint();
+            mPaint.setAntiAlias(true);
+            mPaint.setStyle(Paint.Style.STROKE);
+        }
+
+        private void drawRipple(Canvas canvas) {
+            for (int strokeWidth : mStrokeWidthArr) {
+                if (strokeWidth < 0) {
+                    continue;
+                }
+                mPaint.setStrokeWidth(strokeWidth);
+                mPaint.setAlpha(255 - 255 * strokeWidth / mMaxStrokeWidth);
+                canvas.drawCircle(mCenterX, mCenterY, mCenterWidth / 2 + strokeWidth / 2,
+                        mPaint);
+            }
+
+            for (int i = 0; i < mStrokeWidthArr.length; i++) {
+                if ((mStrokeWidthArr[i] += 4) > mMaxStrokeWidth) {
+                    mStrokeWidthArr[i] = 0;
+                }
+            }
+        }
+
+        public void start() {
+            if (!mRunning) {
+                mRunning = true;
+                clearMsg();
+                invalidate();
+            }
+        }
+
+        private void initArray() {
+            mStrokeWidthArr = new int[mRippleCount];
+            for (int i = 0; i < mStrokeWidthArr.length; i++) {
+                mStrokeWidthArr[i] = -mMaxStrokeWidth / mRippleCount * i;
+            }
+        }
+
+        public void stop() {
+            if (mRunning) {
+                mRunning = false;
+                clearMsg();
+                initArray();
+                postInvalidate();
+            }
+        }
+
+        private void clearMsg() {
+            if (getHandler() != null) {
+                getHandler().removeCallbacksAndMessages(null);
+            }
+        }
+    }
+
+    static class TimeTaskSchedule extends TimerTask {
+        @Override
+        public void run() {
+
+        }
+    }
+}

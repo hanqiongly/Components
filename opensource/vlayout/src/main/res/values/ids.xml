@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_layout_helper_bg" type="id" />
+    <item name="TANGRAM_VIEW_HOLDER_TAG" type="id" />
+    <item name="TANGRAM_VIEW_CONTAINER_ID" type="id" />
+    <item name="TANGRAM_BANNER_ID" type="id" />
+    <item name="TANGRAM_BANNER_HEADER_ID" type="id" />
+    <item name="TANGRAM_BANNER_FOOTER_ID" type="id" />
+    <item name="tk_banner" type="id" />
+</resources>

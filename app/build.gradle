@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "${BUILD_TOOLS_VERSION}"
+
+    defaultConfig {
+        applicationId "com.jack.app"
+        minSdkVersion MIN_SDK_VERSION.toInteger()
+        targetSdkVersion TARGET_SDK_VERSION.toInteger()
+        versionCode VERSION_CODE.toInteger()
+        versionName "${VERSION_NAME}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile project(':opensource:vlayout')
+    compile project(':custom:widget')
+    compile project(':custom:pull')
+    compile project(':custom:imageview')
+    compile project(':custom:texture')
+    compile project(':custom:animator')
+    compile project(':custom:recycler')
+    compile project(':custom:viewgroup')
+    compile project(':analysis')
+//
+//    compile project(':opensource:arouter:arouter-annotation')
+//    compile project(':opensource:arouter:arouter-compiler')
+//    compile project(':opensource:arouter:arouter-api')
+
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
+}
+
+android {
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res',
+                           'src/main/resRecycler',
+                           'src/main/resTextview',
+                           'src/main/resAnim',
+                           'src/main/resViewGroup'
+            ]
+        }
+        main.assets.srcDirs=['src/main/assets']
+    }
+}

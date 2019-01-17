@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.jack.app.MainActivity">
+
+        <com.jack.app.customviews.SkinShareImageScoreView
+            android:id="@+id/ssis_share_score_view"
+            android:layout_width="295dp"
+            android:layout_height="165dp"
+            android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/tv_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jdlksackljdsnckjlnvjklfsdvnkjlsdfnvkjldfvlkjdfvkjldfshvjksdfhvds"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_go_test_span"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to test span"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/go_to_webview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_webview" />
+
+        <TextView
+            android:id="@+id/go_to_drag_follow_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_drag_view" />
+
+        <TextView
+            android:id="@+id/go_to_wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_wave_effect" />
+
+        <TextView
+            android:id="@+id/go_to_wave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_wave_view" />
+
+        <TextView
+            android:id="@+id/go_to_drag_wave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_drag_wave_view" />
+
+        <TextView
+            android:id="@+id/go_to_v_2_bitmap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_v_2_bitmap" />
+
+        <TextView
+            android:id="@+id/go_to_timer_task"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="go_to_timer_task" />
+
+        <TextView
+            android:id="@+id/go_to_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go_to_recyclerview" />
+
+        <TextView
+            android:id="@+id/go_to_drop_down"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="go to drop down" />
+
+        <TextView
+            android:id="@+id/go_to_drop_down_vlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="go to drop down vlayout" />
+
+        <TextView
+            android:id="@+id/go_to_drop_down_vlayout_comp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="go to drop down vlayout comp" />
+
+        <TextView
+            android:id="@+id/tv_go_to_textView_with_Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_textView_with_Arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_to_webview_with_Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_webview_with_Arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_to_crash_with_Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_crash_with_Arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_to_autosize_view_with_Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_autosize_view_with_Arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_to_shopmall_view_with_Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_shopmall_view_with_Arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_to_string_splite_with_Arrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_string_splite_with_Arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_to_test_frame_back_ground_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_test_frame_back_ground_activity" />
+
+        <TextView
+            android:id="@+id/tv_go_to_test_compnoent_span_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="go to component span activity" />
+
+        <TextView
+            android:id="@+id/tv_go_to_test_relative_rules_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv go to test relative rules activity" />
+        <TextView
+            android:id="@+id/tv_go_to_test_double_activity_start_up"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="tv_go_to_test_double_activity_start_up"/>
+    </LinearLayout>
+</ScrollView>

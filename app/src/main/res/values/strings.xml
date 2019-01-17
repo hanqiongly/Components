@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Components</string>
+
+    <string name="category_text_fragment_name">文本类型控件入口</string>
+    <string name="category_image_fragment_name">图像类型控件入口</string>
+    <string name="category_animator_fragment_name">自定义动画入口</string>
+    <string name="category_recycler_fragment_name">RecyclerView控件入口</string>
+    <string name="category_view_pager_fragment_name">ViewPager控件入口</string>
+
+    <!--Magic Indicator 对应的字符串资源-->
+    <string name="action_setting">Settings</string>
+    <string-array name="magic_effect">
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>RotateY</item>
+        <item>Standard</item>
+        <item>Alpha</item>
+        <item>ScaleIn</item>
+        <item>RotateDown and Alpha</item>
+        <item>RotateDown and Alpha And ScaleIn</item>
+    </string-array>
+    <string name="scrollable_tab">scrollable tab</string>
+    <string name="fixed_tab">fixed tab</string>
+    <string name="dynamic_tab">dynamic tab</string>
+    <string name="no_tab_only_indicator">no tab, only indicator</string>
+    <string name="work_with_fragment_container">work with fragment container</string>
+    <string name="tab_with_badge_view">tab with badge view</string>
+    <string name="custom_navigator">custom navigator</string>
+    <string name="random_page">random page</string>
+    <string name="tab_with_custom_layout">load custom layout</string>
+
+    <!-- pull utral sample strings -->
+    <string name="ptr_demo_block_for_home">Ultra Pull to Refresh</string>
+
+    <string name="ptr_demo_block_grid_view">Contains A GridView</string>
+    <string name="ptr_demo_block_list_view">Contains A ListView</string>
+    <string name="ptr_demo_block_web_view">Contains A WebView</string>
+    <string name="ptr_demo_block_scroll_view">Contains ScrollView</string>
+    <string name="ptr_demo_block_frame_layout">Contains A FrameLayout</string>
+    <string name="ptr_demo_block_only_text_view">Contains Even A TextView</string>
+    <string name="ptr_demo_block_with_list_view_and_empty_view">EmptyView and ListView</string>
+    <string name="ptr_demo_block_with_list_view_and_empty_view_tip">It\' empty. \n\nClick to load data.</string>
+
+    <string name="ptr_demo_block_pull_to_refresh">Pull to Refresh</string>
+    <string name="ptr_demo_block_release_to_refresh">Release to Refresh</string>
+    <string name="ptr_demo_block_auto_fresh">Auto Refresh</string>
+
+    <string name="ptr_demo_block_keep_header">Keep Header while Refreshing</string>
+    <string name="ptr_demo_block_hide_header">Hide Header while Refreshing</string>
+    <string name="ptr_demo_block_with_long_press">Long Press</string>
+    <string name="ptr_demo_block_with_view_pager">View Pager</string>
+    <string name="ptr_demo_block_storehouse_header_using_string_array">StoreHouse Style \nusing string array from xml</string>
+    <string name="ptr_demo_storehouse_header_using_string_array_in_title">using xml:&#160;</string>
+    <string name="ptr_demo_block_storehouse_header_using_string">StoreHouse Style \n\nusing string</string>
+    <string name="ptr_demo_storehouse_header_using_string_in_title">using string:&#160;</string>
+    <string name="ptr_demo_storehouse_header_using_point_list">Using Point List</string>
+    <string name="ptr_demo_material_style">Material Style</string>
+    <string name="ptr_demo_rentals_style">Rentals Style</string>
+    <string name="ptr_demo_placeholder">To be continued</string>
+
+    <string name="ptr_demo_material_style_pin_content">Material Style\nPin Content\n v4 style</string>
+    <string name="ptr_demo_enable_next_ptr_at_once">Enable Next PTR at once</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jack.app">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="com.jack.platform.application.ComponentApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jack.app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.jack.app.test.image.TestViewToBitmapActivity" />
+        <activity android:name="com.jack.app.time.TestTimerActivity" />
+
+        <!--pull utral style pages-->
+        <activity android:name=".test.pull.utral.ui.activity.PtrDemoHomeActivity" />
+        <activity android:name=".test.pull.utral.ui.activity.PullToRefreshActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.AutoRefreshActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithGridViewActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.EvenOnlyATextViewActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.HideHeaderActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.KeepHeaderActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.ReleaseToRefreshActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithListViewAndEmptyView"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithListViewActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithScrollViewActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithTextViewInFrameLayoutActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithWebViewActivity"/>
+
+        <activity android:name=".test.pull.utral.ui.EnableNextPTRAtOnceActivity"/>
+        <activity android:name=".test.pull.utral.ui.MaterialStyleActivity" />
+        <activity android:name=".test.pull.utral.ui.MaterialStylePinContentActivity"/>
+        <activity android:name=".test.pull.utral.ui.RentalsStyleActivity"/>
+        <activity android:name=".test.pull.utral.ui.WithLongPressActivity"/>
+
+        <!--pull store house pages-->
+        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingStringArrayActivity"/>
+        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingPointListActivity"/>
+        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingStringActivity"/>
+
+        <!-- TextView activity -->
+        <activity android:name=".test.textview.CircleDegreeTextViewActivity"/>
+        <activity android:name="com.jack.app.test.image.TestDrawableLayerListActivity"/>
+
+        <!-- Animator activity-->
+        <activity android:name="com.jack.app.test.anim.TestWaveEffectActivity" />
+        <activity android:name="com.jack.app.test.anim.TestWaveViewActivity" />
+        <activity android:name="com.jack.app.test.anim.TestDragFollowAnimationActivity" />
+        <activity android:name=".test.anim.loadinganimator.TestLoadingAnimationActivity"/>
+        <activity android:name=".test.anim.loadinganimator.AnimalActivity"/>
+        <activity android:name=".test.anim.loadinganimator.CircleJumpActivity"/>
+        <activity android:name=".test.anim.loadinganimator.CircleRotateActivity"/>
+        <activity android:name=".test.anim.loadinganimator.GoodsActivity"/>
+        <activity android:name=".test.anim.loadinganimator.SceneryActivity"/>
+        <activity android:name=".test.anim.loadinganimator.ShapeChangeActivity"/>
+
+
+        <!-- ViewGroup activity -->
+        <activity android:name=".test.viewgroup.floatingview.TestFloatingViewActivity"/>
+        <activity android:name="com.jack.app.test.textview.TestHtml2StringActivity" />
+        <activity android:name="com.jack.app.test.viewgroup.TestRelativeLayoutLayoutRules" />
+
+        <!-- ViewPager activity -->
+        <activity android:name=".test.viewpager.CircleViewPagerActivity" />
+        <activity android:name=".test.viewpager.StandardViewPagerActivity" />
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jack.analysis" >
+    <application>
+        <!-- Analysis Activity declaration-->
+        <activity android:name="com.jack.analysis.recycler.activity.AnalysisDeleteRecyclerItemActivity"/>
+
+
+        <activity android:name="com.jack.analysis.recycler.activity.AnalyseRecyclerViewActivity" />
+
+        <activity android:name="com.jack.analysis.crash.NullpointerCrashTextActivity" />
+
+        <activity android:name="com.jack.analysis.activity.lifecircle.FirstActivity" />
+        <activity android:name="com.jack.analysis.activity.lifecircle.SecondAtivity" />
+        <activity android:name="com.jack.analysis.activity.AnalysisRoundedBackgroundAndShaderActivity"/>
+
+        <!--Image Canvas activity-->
+        <activity android:name=".image.activity.CanvasUsageAnalysisActivity"/>
+    </application>
+</manifest>

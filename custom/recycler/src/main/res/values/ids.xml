@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="drop_down_menu_bar" type="id" />
+    <item name="drop_down_menu_bar_with_sub_menu" type="id"/>
+    <item name="drop_down_first_level_menu_layout" type="id"/>
+    <item name="drop_down_secondary_menu_layout" type="id"/>
+    <item name="dropDownMenuBarContentView" type="id" />
+
+    <item name="main_page_float_view_image" type="id" />
+    <item name="main_page_float_view_close" type="id" />
+</resources>

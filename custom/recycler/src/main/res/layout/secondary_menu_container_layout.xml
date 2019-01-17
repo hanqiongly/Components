@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_select_label_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#f3f3f3" />
+
+    <LinearLayout
+        android:id="@+id/ll_layer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:background="#00000000"
+        >
+
+        <TextView
+            android:id="@+id/tv_category_menu_reset"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="重置"
+            android:background="#898989"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_category_menu_ensure"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="确定"
+            android:background="#a99989"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

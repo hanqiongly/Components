@@ -1,0 +1,2 @@
+测试当前包中包含的recyclerview创意以及新的使用方式、设计
+其中比较常用的RecyvlerView的分区块的管理开源组件：VLayout的常用数据使用

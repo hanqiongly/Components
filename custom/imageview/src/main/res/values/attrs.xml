@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <declare-styleable name="DragFollowImageView">
+        <attr name="maxHeight" format="dimension"/><!--浮动窗口最大的高度-->
+        <attr name="maxWidth" format="dimension"/><!--浮动窗口的最大宽度-->
+        <attr name="imageHeightRatio" format="float"/><!--浮动窗口的image组件的高度所占整个控件比-->
+    </declare-styleable>
+
+    <declare-styleable name="DragRelativeViewAddGif">
+        <attr name="floatViewMaxHeight" format="dimension"/><!--浮动窗口最大的高度-->
+        <attr name="floatViewMaxWidth" format="dimension"/><!--浮动窗口的最大宽度-->
+        <attr name="r_imageHeightRatio" format="float"/><!--浮动窗口的image组件的高度所占整个控件比-->
+    </declare-styleable>
+
+    <declare-styleable name="WebViewWithCorner">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="cornerColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewWithCorner">
+        <attr name="imageCornerRadius" format="dimension" />
+        <attr name="imageCornerColor" format="color"/>
+    </declare-styleable>
+</resources>

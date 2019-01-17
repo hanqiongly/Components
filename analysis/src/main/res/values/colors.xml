@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <color name="search_category_label_normal_color">#330303</color>
+    <color name="search_category_label_select_color">#f1002a</color>
+</resources>

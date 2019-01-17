@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4b000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jack.webview.WebViewWithCorner
+        android:id="@+id/wv_prize_content_holder"
+        android:layout_width="310dp"
+        android:layout_height="392dp"
+        app:cornerRadius="15dp"
+        app:cornerColor="#4b000000"
+        android:background="#00000000"
+        />
+</RelativeLayout>

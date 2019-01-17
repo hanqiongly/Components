@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+ext {
+    bintrayName = 'arouter-annotation'
+    artifact = bintrayName
+    libraryName = 'ARouter annotation'
+    libraryDescription = 'The annotation used in arouter api'
+    libraryVersion = AROUTER_ANNOTATION_VERSION
+}
+
+compileJava {
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+}

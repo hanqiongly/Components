@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "${BUILD_TOOLS_VERSION}"
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION.toInteger()
+        targetSdkVersion TARGET_SDK_VERSION.toInteger()
+        versionCode VERSION_CODE.toInteger()
+        versionName "${VERSION_NAME}"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile project(':opensource:platform')
+    compile project(':custom:imageview')
+
+    compile 'com.github.medyo:fancybuttons:1.8.4'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile project(path: ':opensource:utils')
+}
+
+android {
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res',
+                           'src/main/resImage',
+            ]
+        }
+        main.assets.srcDirs=['src/main/assets']
+    }
+}

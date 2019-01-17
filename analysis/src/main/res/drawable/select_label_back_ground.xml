@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/search_category_label_selector_background"/>
+    <item android:state_selected="false" android:drawable="@drawable/search_category_label_normal_background"/>
+    <item android:state_first="true" android:drawable="@drawable/search_category_label_normal_background"/>
+
+</selector>

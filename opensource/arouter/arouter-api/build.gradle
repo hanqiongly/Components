@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayName = AROUTER_ANNOTATION_BITRATE_NAME
+    artifact = bintrayName
+    libraryName = 'ARouter annotation'
+    libraryDescription= 'The annotation used in arouter api'
+    libraryVersion = AROUTER_API_VERSION
+}
+
+android{
+    compileSdkVersion 26
+    buildToolsVersion "${BUILD_TOOLS_VERSION}"
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{}
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+}
+
+dependencies{
+    annotationProcessor project(':opensource:arouter:arouter-compiler')
+    compile project(':opensource:arouter:arouter-annotation')
+    compile "com.android.support:support-v4:26.+"
+}

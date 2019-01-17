@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <!--Loading animator-->
+    <string name="label_circle_rotate">CircleRotateActivity</string>
+    <string name="label_circle_jump">CircleJumpActivity</string>
+    <string name="label_scenery">SceneryActivity</string>
+    <string name="label_animal">AnimalActivity</string>
+    <string name="label_goods">GoodsActivity</string>
+    <string name="label_shape_change">ShapeChangeActivity</string>
+    <string name="label_oval_widget_circle_rotate">CircleWidgetRotateActivity</string>
+</resources>

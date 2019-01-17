@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4b000000">
+
+    <com.jack.imageview.ImageViewWithCorner
+        android:layout_width="310dp"
+        android:layout_height="392dp"
+        android:src="@drawable/test_image_corener"
+        app:imageCornerRadius="15dp"
+        app:imageCornerColor="#4b000000"
+        android:background="#00000000"/>
+</RelativeLayout>

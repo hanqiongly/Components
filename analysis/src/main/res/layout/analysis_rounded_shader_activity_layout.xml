@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginBottom="15dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dresserTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="我的智能化妆台"
+            android:textColor="#333333"
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="30dp"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/priceSumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:drawablePadding="5dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="11dp"
+                tools:text="1234"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_beauty_manager_add_dresser_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="去炫耀"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="0.5dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_beauty_manager_add_dresser_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/beauty_dresser_notempty_entrance_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="left|top">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="#FFEFF2"
+                    android:visibility="gone"
+                    app:riv_oval="true" />
+
+                <TextView
+                    android:id="@+id/tv_beauty_manager_add_dresser_pie_chart_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#111111"
+                    android:textSize="8dp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_beauty_manager_add_dresser_documents_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_beauty_manager_add_dresser_documents_using_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#ff3c3c3c"
+                        android:textSize="13sp"
+                        tools:text="· 您有20款妆品在使用中" />
+
+                    <TextView
+                        android:id="@+id/tv_beauty_manager_add_dresser_documents_fit_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#3c3c3c"
+                        android:textSize="13sp"
+                        tools:text="· 妆品匹配度为90%" />
+
+                    <TextView
+                        android:id="@+id/tv_beauty_manager_add_dresser_documents_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="#3c3c3c"
+                        android:textSize="13sp"
+                        tools:text="· 你可是种草小能手哦hadkhsclkdjasbchjadsbchjdsbcahds" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_beauty_manager_add_dresser_graphic_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_beauty_manager_add_dresser_graphic_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="14dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_beauty_manager_add_dresser_expired_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_beauty_manager_add_dresser_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/managerFB"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            fancy:fb_borderColor="#f6d6dc"
+            fancy:fb_borderWidth="0.5dp"
+            fancy:fb_defaultColor="#fff8f9"
+            fancy:fb_iconPaddingRight="4dp"
+            fancy:fb_iconPaddingTop="10dp"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="21dp"
+            fancy:fb_text="去管理"
+            fancy:fb_textColor="#ff4e87"
+            fancy:fb_textGravity="center"
+            fancy:fb_textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

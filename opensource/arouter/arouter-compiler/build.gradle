@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+ext {
+    bintrayName = 'arouter-compiler'
+    artifact = bintrayName
+    libraryName = 'ARouter compiler'
+    libraryDescription = 'A compiler for ARouter to find route'
+    libraryVersion = AROUTER_COMPILER_VERSION
+}
+
+compileJava {
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+}
+
+dependencies {
+    compile project(':opensource:arouter:arouter-annotation')
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'com.squareup:javapoet:1.7.0'
+
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'org.apache.commons:commons-collections4:4.1'
+}

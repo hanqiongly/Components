@@ -1,0 +1,24 @@
+<com.jack.analysis.viewgroup.CustomLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.jack.analysis.image.canvas.CanvasView
+        android:id="@+id/iv_canvas_view_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_weight="0.5"
+        android:text="---------我是分割线---------"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_analysis_canvas_content_type_list"
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+</com.jack.analysis.viewgroup.CustomLinearLayout>

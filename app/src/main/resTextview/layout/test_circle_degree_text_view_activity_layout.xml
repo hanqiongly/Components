@@ -1,0 +1,20 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jack.texture.CircleDegreeTextView
+        android:id="@+id/cdtv_test_activity"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:gravity="center"/>
+    <com.jack.texture.SpiderViewForAngelView
+        android:id="@+id/v_spider_radar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

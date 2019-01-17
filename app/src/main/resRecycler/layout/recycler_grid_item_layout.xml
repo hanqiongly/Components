@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_grid_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/riv_grid_item_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="5dp"
+        app:riv_oval="false"
+        app:riv_corner_radius="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_grid_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/riv_grid_item_image"/>
+</RelativeLayout>
