@@ -66,6 +66,7 @@
         <activity android:name=".test.anim.loadinganimator.GoodsActivity"/>
         <activity android:name=".test.anim.loadinganimator.SceneryActivity"/>
         <activity android:name=".test.anim.loadinganimator.ShapeChangeActivity"/>
+        <activity android:name=".test.anim.TestLoadingProgressAnimActivity"/>
 
 
         <!-- ViewGroup activity -->

@@ -3,6 +3,7 @@ package com.jack.app.mainpage.fragment.categoryfragment;
 import com.jack.app.mainpage.fragment.AppCategoryFragmentAdapter;
 import com.jack.app.mainpage.fragment.AppCategoryWidgetBaseFragment;
 import com.jack.app.mainpage.model.TargetClassInfoModel;
+import com.jack.app.test.anim.TestLoadingProgressAnimActivity;
 import com.jack.app.test.anim.TestWaveEffectActivity;
 import com.jack.app.test.anim.TestWaveViewActivity;
 import com.jack.app.test.anim.loadinganimator.TestLoadingAnimationActivity;
@@ -43,6 +44,11 @@ public class AnimatorWidgetFragment extends AppCategoryWidgetBaseFragment{
         loadingAnimActivity.setClassType(TestLoadingAnimationActivity.class);
         loadingAnimActivity.setClassInfo("加载loading类型的动画");
         classInfoModelList.add(loadingAnimActivity);
+
+        TargetClassInfoModel progressTextAnimActivity = new TargetClassInfoModel();
+        progressTextAnimActivity.setClassType(TestLoadingProgressAnimActivity.class);
+        progressTextAnimActivity.setClassInfo("文本显示控件，跟随当前的数值展现对应的圆弧进度动画");
+        classInfoModelList.add(progressTextAnimActivity);
         return classInfoModelList;
     }
 

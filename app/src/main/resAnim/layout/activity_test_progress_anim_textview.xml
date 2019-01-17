@@ -1,0 +1,10 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <com.jack.animator.LoadingProgressAnimView
+    android:id="@+id/tv_anim_progress_disp_view"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_centerInParent="true"/>
+</RelativeLayout>
