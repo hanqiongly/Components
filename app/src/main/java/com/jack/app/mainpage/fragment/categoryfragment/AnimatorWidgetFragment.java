@@ -4,6 +4,7 @@ import com.jack.app.mainpage.fragment.AppCategoryFragmentAdapter;
 import com.jack.app.mainpage.fragment.AppCategoryWidgetBaseFragment;
 import com.jack.app.mainpage.model.TargetClassInfoModel;
 import com.jack.app.test.anim.TestLoadingProgressAnimActivity;
+import com.jack.app.test.anim.TestSpiderAnimViewActivity;
 import com.jack.app.test.anim.TestWaveEffectActivity;
 import com.jack.app.test.anim.TestWaveViewActivity;
 import com.jack.app.test.anim.loadinganimator.TestLoadingAnimationActivity;
@@ -49,6 +50,11 @@ public class AnimatorWidgetFragment extends AppCategoryWidgetBaseFragment{
         progressTextAnimActivity.setClassType(TestLoadingProgressAnimActivity.class);
         progressTextAnimActivity.setClassInfo("文本显示控件，跟随当前的数值展现对应的圆弧进度动画");
         classInfoModelList.add(progressTextAnimActivity);
+
+        TargetClassInfoModel spiderEffectAnimActivity = new TargetClassInfoModel();
+        spiderEffectAnimActivity.setClassType(TestSpiderAnimViewActivity.class);
+        spiderEffectAnimActivity.setClassInfo("蜘蛛网动态效果，带铺开动画");
+        classInfoModelList.add(spiderEffectAnimActivity);
         return classInfoModelList;
     }
 

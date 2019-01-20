@@ -14,7 +14,8 @@
         android:roundIcon="@drawable/launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.jack.app.MainActivity">
+        <activity android:name="com.jack.app.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,61 +23,104 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.jack.app.test.image.TestViewToBitmapActivity" />
-        <activity android:name="com.jack.app.time.TestTimerActivity" />
+        <activity android:name="com.jack.app.test.image.TestViewToBitmapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jack.app.time.TestTimerActivity"
+            android:screenOrientation="portrait"/>
 
         <!--pull utral style pages-->
-        <activity android:name=".test.pull.utral.ui.activity.PtrDemoHomeActivity" />
-        <activity android:name=".test.pull.utral.ui.activity.PullToRefreshActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.AutoRefreshActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.WithGridViewActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.EvenOnlyATextViewActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.HideHeaderActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.KeepHeaderActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.ReleaseToRefreshActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.WithListViewAndEmptyView"/>
-        <activity android:name=".test.pull.utral.ui.activity.WithListViewActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.WithScrollViewActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.WithTextViewInFrameLayoutActivity"/>
-        <activity android:name=".test.pull.utral.ui.activity.WithWebViewActivity"/>
+        <activity android:name=".test.pull.utral.ui.activity.PtrDemoHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.PullToRefreshActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.AutoRefreshActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithGridViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.EvenOnlyATextViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.HideHeaderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.KeepHeaderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.ReleaseToRefreshActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithListViewAndEmptyView"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithListViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithScrollViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithTextViewInFrameLayoutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.activity.WithWebViewActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".test.pull.utral.ui.EnableNextPTRAtOnceActivity"/>
-        <activity android:name=".test.pull.utral.ui.MaterialStyleActivity" />
-        <activity android:name=".test.pull.utral.ui.MaterialStylePinContentActivity"/>
-        <activity android:name=".test.pull.utral.ui.RentalsStyleActivity"/>
-        <activity android:name=".test.pull.utral.ui.WithLongPressActivity"/>
+        <activity android:name=".test.pull.utral.ui.EnableNextPTRAtOnceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.MaterialStyleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.MaterialStylePinContentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.RentalsStyleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.WithLongPressActivity"
+            android:screenOrientation="portrait"/>
 
         <!--pull store house pages-->
-        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingStringArrayActivity"/>
-        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingPointListActivity"/>
-        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingStringActivity"/>
+        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingStringArrayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingPointListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.pull.utral.ui.storehouse.StoreHouseUsingStringActivity"
+            android:screenOrientation="portrait"/>
 
         <!-- TextView activity -->
-        <activity android:name=".test.textview.CircleDegreeTextViewActivity"/>
-        <activity android:name="com.jack.app.test.image.TestDrawableLayerListActivity"/>
+        <activity android:name=".test.textview.CircleDegreeTextViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jack.app.test.image.TestDrawableLayerListActivity"
+            android:screenOrientation="portrait"/>
 
         <!-- Animator activity-->
-        <activity android:name="com.jack.app.test.anim.TestWaveEffectActivity" />
-        <activity android:name="com.jack.app.test.anim.TestWaveViewActivity" />
-        <activity android:name="com.jack.app.test.anim.TestDragFollowAnimationActivity" />
-        <activity android:name=".test.anim.loadinganimator.TestLoadingAnimationActivity"/>
-        <activity android:name=".test.anim.loadinganimator.AnimalActivity"/>
-        <activity android:name=".test.anim.loadinganimator.CircleJumpActivity"/>
-        <activity android:name=".test.anim.loadinganimator.CircleRotateActivity"/>
-        <activity android:name=".test.anim.loadinganimator.GoodsActivity"/>
-        <activity android:name=".test.anim.loadinganimator.SceneryActivity"/>
-        <activity android:name=".test.anim.loadinganimator.ShapeChangeActivity"/>
-        <activity android:name=".test.anim.TestLoadingProgressAnimActivity"/>
+        <activity android:name="com.jack.app.test.anim.TestWaveEffectActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jack.app.test.anim.TestWaveViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jack.app.test.anim.TestDragFollowAnimationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.TestLoadingAnimationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.AnimalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.CircleJumpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.CircleRotateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.GoodsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.SceneryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.loadinganimator.ShapeChangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.TestLoadingProgressAnimActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.anim.TestSpiderAnimViewActivity"
+            android:screenOrientation="portrait"/>
 
 
         <!-- ViewGroup activity -->
-        <activity android:name=".test.viewgroup.floatingview.TestFloatingViewActivity"/>
-        <activity android:name="com.jack.app.test.textview.TestHtml2StringActivity" />
-        <activity android:name="com.jack.app.test.viewgroup.TestRelativeLayoutLayoutRules" />
+        <activity android:name=".test.viewgroup.floatingview.TestFloatingViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jack.app.test.textview.TestHtml2StringActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jack.app.test.viewgroup.TestRelativeLayoutLayoutRules"
+            android:screenOrientation="portrait"/>
 
         <!-- ViewPager activity -->
-        <activity android:name=".test.viewpager.CircleViewPagerActivity" />
-        <activity android:name=".test.viewpager.StandardViewPagerActivity" />
+        <activity android:name=".test.viewpager.CircleViewPagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.viewpager.StandardViewPagerActivity"
+            android:screenOrientation="portrait"/>
 
 
 
