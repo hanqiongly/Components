@@ -212,5 +212,38 @@
     <orderEntry type="module" module-name="pull" />
     <orderEntry type="module" module-name="platform" />
     <orderEntry type="module" module-name="widget" />
+    <orderEntry type="module" module-name="utils" />
+    <orderEntry type="module" module-name="viewgroup" />
+    <orderEntry type="module" module-name="vlayout" />
+    <orderEntry type="module" module-name="imageview" />
+    <orderEntry type="module" module-name="texture" />
+    <orderEntry type="module" module-name="animator" />
+    <orderEntry type="module" module-name="recycler" />
+    <orderEntry type="module" module-name="analysis" />
+    <orderEntry type="module" module-name="pull" />
+    <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module" module-name="widget" />
+    <orderEntry type="module" module-name="utils" />
+    <orderEntry type="module" module-name="viewgroup" />
+    <orderEntry type="module" module-name="vlayout" />
+    <orderEntry type="module" module-name="imageview" />
+    <orderEntry type="module" module-name="texture" />
+    <orderEntry type="module" module-name="animator" />
+    <orderEntry type="module" module-name="recycler" />
+    <orderEntry type="module" module-name="analysis" />
+    <orderEntry type="module" module-name="pull" />
+    <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module" module-name="widget" />
+    <orderEntry type="module" module-name="utils" />
+    <orderEntry type="module" module-name="viewgroup" />
+    <orderEntry type="module" module-name="vlayout" />
+    <orderEntry type="module" module-name="imageview" />
+    <orderEntry type="module" module-name="texture" />
+    <orderEntry type="module" module-name="animator" />
+    <orderEntry type="module" module-name="recycler" />
+    <orderEntry type="module" module-name="analysis" />
+    <orderEntry type="module" module-name="pull" />
+    <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module" module-name="widget" />
   </component>
 </module>

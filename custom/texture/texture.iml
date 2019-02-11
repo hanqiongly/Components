@@ -149,5 +149,11 @@
     <orderEntry type="module" module-name="platform" />
     <orderEntry type="module" module-name="utils" />
     <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module" module-name="utils" />
+    <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module" module-name="utils" />
+    <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module" module-name="utils" />
+    <orderEntry type="module" module-name="platform" />
   </component>
 </module>

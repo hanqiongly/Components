@@ -36,5 +36,8 @@
     <orderEntry type="library" exported="" name="Gradle: guava-18.0" level="project" />
     <orderEntry type="module" module-name="arouter-annotation" exported="" />
     <orderEntry type="module" module-name="arouter-annotation" exported="" />
+    <orderEntry type="module" module-name="arouter-annotation" exported="" />
+    <orderEntry type="module" module-name="arouter-annotation" exported="" />
+    <orderEntry type="module" module-name="arouter-annotation" exported="" />
   </component>
 </module>

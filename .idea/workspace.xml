@@ -7,27 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a72b4eef-320f-4b68-b1b3-2cfed920c5f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/TestSpiderAnimViewActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resAnim/layout/activity_test_spider_anim_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/SpiderEffectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/analysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/fragment/categoryfragment/AnimatorWidgetFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/fragment/categoryfragment/AnimatorWidgetFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/animator/animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/animator/animator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/imageview/imageview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/imageview/imageview.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/pull/pull.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/pull/pull.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/recycler/recycler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/recycler/recycler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/texture/texture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/texture/texture.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/viewgroup/viewgroup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/viewgroup/viewgroup.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/widget/widget.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/widget/widget.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/http/http.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/arouter-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-api/arouter-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/arouter-compiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/arouter-compiler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/platform/platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/platform/platform.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opensource/utils/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/utils/utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/vlayout/vlayout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/vlayout/vlayout.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +45,8 @@
           <entry key="gradle" value="24" />
           <entry key="gradlew" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="49" />
-          <entry key="md" value="6" />
+          <entry key="java" value="75" />
+          <entry key="md" value="7" />
           <entry key="properties" value="4" />
           <entry key="xml" value="8" />
         </counts>
@@ -64,9 +56,9 @@
           <entry key="Git file" value="2" />
           <entry key="Groovy" value="24" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="49" />
+          <entry key="JAVA" value="75" />
           <entry key="Manifest" value="1" />
-          <entry key="Markdown" value="6" />
+          <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="8" />
@@ -74,13 +66,13 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -106,45 +98,81 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/LoadingProgressAnimView.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/26.1.0/63d6891b399433c913fe91ce95a8456de02d367f/recyclerview-v7-26.1.0-sources.jar!/android/support/v7/widget/RecyclerView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2115">
-              <caret line="159" column="38" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="53265">
+              <caret line="3692" column="32" selection-start-line="3692" selection-start-column="16" selection-end-line="3692" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/dev_inst/Android_SDK/sources/android-26/android/support/v7/widget/RecyclerView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="3690" column="32" selection-start-line="3690" selection-start-column="16" selection-end-line="3690" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/ExposeLinearLayoutManagerEx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/26.1.0/63d6891b399433c913fe91ce95a8456de02d367f/recyclerview-v7-26.1.0-sources.jar!/android/support/v7/widget/LinearLayoutManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="756" column="24" lean-forward="true" selection-start-line="756" selection-start-column="24" selection-end-line="756" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/TestSpiderAnimViewActivity.java">
+        <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/GridLayoutHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1696">
+              <caret line="214" column="164" selection-start-line="214" selection-start-column="164" selection-end-line="214" selection-end-column="164" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/SpiderEffectView.java">
+        <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/BaseLayoutHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1494">
-              <caret line="168" column="57" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="57" />
+            <state relative-caret-position="191">
+              <caret line="331" column="21" lean-forward="true" selection-start-line="331" selection-start-column="21" selection-end-line="331" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#SpiderEffectView#0" />
+                <element signature="e#11239#11240#0" expanded="true" />
+                <element signature="e#11310#11311#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
+        <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/LayoutManagerHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1815">
-              <caret line="121" column="74" selection-start-line="121" selection-start-column="74" selection-end-line="121" selection-end-column="74" />
+            <state relative-caret-position="180">
+              <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/LayoutHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+              <folding>
+                <element signature="e#2418#2419#0" expanded="true" />
+                <element signature="e#2467#2468#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,6 +196,14 @@
       <find>\&lt;RelativeLayout xmlns\:android\=\&quot;http\:\/\/schemas\.android\.com\/apk\/res\/android\&quot;\n    android\:layout_height\=\&quot;match_parent\&quot;\n    android\:layout_width\=\&quot;match_parent\&quot;\&gt;\n\&lt;com\.jack\.animator\.LoadingProgressAnimView\n    android\:id\=\&quot;\@\+id\/tv_anim_progress_disp_view\&quot;\n    android\:layout_width\=\&quot;300dp\&quot;\n    android\:layout_height\=\&quot;300dp\&quot;\n    android\:layout_centerInParent\=\&quot;true\&quot;\/\&gt;\n\&lt;\/RelativeLayout\&gt;</find>
       <find>package com\.jack\.animator\;\n\nimport android\.content\.Context\;\nimport android\.graphics\.Paint\;\nimport android\.support\.annotation\.Nullable\;\nimport android\.support\.v4\.content\.ContextCompat\;\nimport android\.util\.AttributeSet\;\nimport android\.view\.View\;\n\nimport com\.jack\.util\.DisplayUtils\;\n\nimport java\.util\.List\;\n\n\/\*\*\n \* \@author liuyang\n \* \@date 18\/01\/2019\n \* 仿蜘蛛网效果的控件\，蜘蛛网状效果\n \* \*\/\npublic class SpiderEffectView extends View \{\n    private final static float MAX_VALUE \= 100f\;\n\n    private List\&lt;SpiderEffectView\&gt; dataList\;\n\n    private String mWeakestCode\;\n\n    private Paint webPaint\;\n    private Paint valuePaint\;\n    private Paint textPaint\;\n\n    \/\*\*\n     \* 背景颜色\n     \*\/\n    private int bgColor\;\n    \/\*\*\n     \* 雷达线条颜色\n     \*\/\n    private int webColor\;\n    \/\*\*\n     \* 百分比值颜色\n     \*\/\n    private int valueColor\;\n    \/\*\*\n     \* 文案颜色\n     \*\/\n    private int textColor\;\n    \/\*\*\n     \* 最少得分项特殊的颜色\n     \*\/\n    private int minScoreTextColor\;\n\n    \/\*\*\n     \* 雷达网线条宽度\n     \*\/\n    private float webLineWidth\;\n    \/\*\*\n     \* 百分比值圆点半径大小\n     \*\/\n    private float valuePointRadius\;\n    \/\*\*\n     \* 字体大小\n     \*\/\n    private float textSize\;\n    \/\*\*\n     \* 雷达网每个分割区域扫过的弧度\n     \*\/\n    private float deltaAngle\;\n    \/\*\*\n     \* 雷达网半径\n     \*\/\n    private float radius\;\n    \/\*\*\n     \* 雷达网层数\n     \*\/\n    private int webCount\;\n\n    private int mWidth\;\n    private int mHeight\;\n\n    private int mMinScoreIndex \= \-1\;\n\n    public SpiderEffectView\(Context context\) \{\n        this\(context\, null\)\;\n    \}\n\n    public SpiderEffectView\(Context context\, \@Nullable AttributeSet attrs\) \{\n        this\(context\, attrs\, 0\)\;\n    \}\n\n    public SpiderEffectView\(Context context\, \@Nullable AttributeSet attrs\, int defStyleAttr\) \{\n        super\(context\, attrs\, defStyleAttr\)\;\n        init\(context\)\;\n    \}\n\n    private void init\(Context context\) \{\n            bgColor \= ContextCompat\.getColor\(getContext\(\)\, R\.color\.color_e6e9ff_16\)\;\n            webColor \= ContextCompat\.getColor\(getContext\(\)\, R\.color\.color_9491ff_30\)\;\n            valueColor \= ContextCompat\.getColor\(getContext\(\)\, R\.color\.color_8640ff_40\)\;\n            textColor \= ContextCompat\.getColor\(getContext\(\)\, R\.color\.color_3c3c3c_100\)\;\n            minScoreTextColor \= ContextCompat\.getColor\(getContext\(\)\, R\.color\.reddishPink\)\;\n\n            webLineWidth \= DisplayUtils\.dp2px\(context\, 0\.5f\)\;\n            valuePointRadius \= DisplayUtils\.dp2px\(context\, 2\.5f\)\;\n            textSize \= DisplayUtils\.dp2px\(getContext\(\)\, 14\.0f\)\;\n\n            webPaint \= new Paint\(\)\;\n            webPaint\.setAntiAlias\(true\)\;\n            webPaint\.setColor\(webColor\)\;\n            webPaint\.setStyle\(Paint\.Style\.STROKE\)\;\n\n            valuePaint \= new Paint\(\)\;\n            valuePaint\.setAntiAlias\(true\)\;\n            valuePaint\.setColor\(valueColor\)\;\n            valuePaint\.setStyle\(Paint\.Style\.FILL\)\;\n\n            textPaint \= new Paint\(\)\;\n            textPaint\.setAntiAlias\(true\)\;\n            textPaint\.setStyle\(Paint\.Style\.FILL\)\;\n            textPaint\.setColor\(textColor\)\;\n    \}\n\n\n\n    \/\*\*蜘蛛网状图每个顶点要显示的信息\*\/\n    public static class SpiderPoint \{\n        private String title\;\n        private int value\;\n        private boolean isDefault\;\n        private String code\;\n\n        public SpiderPoint\(\)\{\}\n\n        public SpiderPoint\(String title\,int value\, String code\) \{\n            this\(title\, value\, code\, false\)\;\n        \}\n\n        public SpiderPoint\(String title\,int value\, String code\, boolean isDefault\) \{\n            this\.code \= code\;\n            this\.isDefault \= isDefault\;\n            this\.value \= value\;\n            this\.title \= title\;\n        \}\n\n        public String getTitle\(\) \{\n            return title\;\n        \}\n\n        public String getDispInfo\(\) \{\n            return isDefault \? \&quot;\?\&quot; \: \&quot;\&quot; \+ value\;\n        \}\n\n        public void setValue\(int value\) \{\n            this\.value \= value\;\n        \}\n\n        public boolean isDefault\(\) \{\n            return isDefault\;\n        \}\n\n        public void setDefault\(boolean aDefault\) \{\n            isDefault \= aDefault\;\n        \}\n\n        public String getCode\(\) \{\n            return code\;\n        \}\n\n        public void setCode\(String code\) \{\n            this\.code \= code\;\n        \}\n    \}\n\}\n</find>
       <find>radius</find>
+      <find>setAdap</find>
+      <find>runP</find>
+      <find>mLayoutView</find>
+      <find>beforeLayout</find>
+      <find>layoutChild</find>
+      <find>layoutCh</find>
+      <find>onLayout(</find>
+      <find>onLayoutChildren</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,9 +255,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="4" />
-    <option name="y" value="257" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="99" />
+    <option name="y" value="33" />
     <option name="width" value="1436" />
     <option name="height" value="877" />
   </component>
@@ -246,21 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Components" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,207 +329,7 @@
             <path>
               <item name="Components" type="b2602c69:ProjectViewProjectNode" />
               <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="customviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="mainpage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="anim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resAnim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resAnim" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="animator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="animator" type="462c0819:PsiDirectoryNode" />
-              <item name="animhelper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="animator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="imageview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="imageview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="webview" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Components" type="b2602c69:ProjectViewProjectNode" />
@@ -517,18 +340,156 @@
             <path>
               <item name="Components" type="b2602c69:ProjectViewProjectNode" />
               <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recycler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recycler" type="462c0819:PsiDirectoryNode" />
+              <item name="decoration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recycler" type="462c0819:PsiDirectoryNode" />
+              <item name="recywithtab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recycler" type="462c0819:PsiDirectoryNode" />
+              <item name="stickymenu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="custom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="recycler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recycler" type="462c0819:PsiDirectoryNode" />
+              <item name="stickymenu" type="462c0819:PsiDirectoryNode" />
+              <item name="dropdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="opensource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="opensource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="vlayout" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="opensource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="vlayout" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="opensource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="vlayout" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="opensource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="vlayout" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Components" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="opensource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="vlayout" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vlayout" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Components" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Components" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Float&#9;PSI&#9;JAVA://com.jack.viewgroup.floating.Floating.FloatingDecorView&#10;View&#9;PSI&#9;JAVA://com.alibaba.android.vlayout.LayoutView" />
+    <property name="SearchEverywhereHistoryKey" value="Grid&#9;PSI&#9;JAVA://com.alibaba.android.vlayout.layout.GridLayoutHelper&#10;LinearLayoutManager&#9;PSI&#9;JAVA://com.alibaba.android.vlayout.ExposeLinearLayoutManagerEx&#10;Linea&#9;PSI&#9;JAVA://com.alibaba.android.vlayout.layout.LinearLayoutHelper&#10;Sticky&#9;PSI&#9;JAVA://com.alibaba.android.vlayout.layout.StickyLayoutHelper&#10;Float&#9;PSI&#9;JAVA://com.jack.viewgroup.floating.Floating.FloatingDecorView&#10;View&#9;PSI&#9;JAVA://com.alibaba.android.vlayout.LayoutView" />
     <property name="add_unversioned_files" value="true" />
     <property name="android.project.structure.last.selected" value="Project" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -669,11 +630,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="99" y="33" width="1436" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.29756796" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25035867" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -682,14 +643,14 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49928468" visible="true" weight="0.4993804" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49928468" weight="0.2812887" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50143063" side_tool="true" weight="0.4213135" />
-      <window_info anchor="bottom" id="Build" order="4" sideWeight="0.4985694" weight="0.009913259" />
+      <window_info active="true" anchor="bottom" id="Build" order="4" sideWeight="0.4985694" visible="true" weight="0.23884514" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Logcat" order="6" />
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" visible="true" weight="0.21065675" />
+      <window_info active="true" anchor="bottom" id="Find" order="9" visible="true" weight="0.22309712" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -703,150 +664,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/loadinganimator/TestLoadingAnimationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev_inst/Android_SDK/sources/android-26/android/animation/ValueAnimator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="367" column="32" selection-start-line="367" selection-start-column="32" selection-end-line="367" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev_inst/Android_SDK/sources/android-26/android/graphics/drawable/Drawable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1017">
-          <caret line="383" column="13" selection-start-line="383" selection-start-column="13" selection-end-line="383" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev_inst/Android_SDK/sources/android-26/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="15542" column="37" lean-forward="true" selection-start-line="15542" selection-start-column="37" selection-end-line="15542" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/LayoutView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opensource/utils/src/main/java/com/jack/util/file/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/viewgroup/src/main/java/com/jack/viewgroup/floating/transition/FloatingTransition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opensource/utils/src/main/java/com/jack/util/log/Debug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/wave/BreathView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1729">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/wave/MyDrawView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/wave/FrameBackGroundView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-556">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/wave/waveview/WaveView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opensource/utils/src/main/java/com/jack/util/asset/AssetFileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/viewgroup/src/main/java/com/jack/viewgroup/floating/Floating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/loading/render/LoadingRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/loading/render/animal/FishLoadingRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/recycler/src/main/java/com/jack/recycler/decoration/BasicItemDecoration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/recycler/src/main/java/com/jack/recycler/recywithtab/readMe.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/imageview/src/main/java/com/jack/imageview/bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21159" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/imageview/src/main/java/com/jack/webview/webviewwithcorner.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/loading/LoadingView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -855,12 +672,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/resAnim/layout/activity_animal.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/dev_inst/Android_SDK/sources/android-26/android/view/animation/DecelerateInterpolator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -880,9 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,12 +778,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/resAnim/layout/activity_test_progress_anim_textview.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="47" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/TestWaveEffectActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -979,12 +793,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/resAnim/layout/activity_test_spider_anim_view.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="45" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/TestDragFollowAnimationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -994,12 +808,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_drag_anim_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/imageview/src/main/java/activity/TestWebViewCornerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1026,9 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,35 +847,190 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2115">
           <caret line="159" column="38" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="74" selection-start-line="121" selection-start-column="74" selection-end-line="121" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/animator/src/main/java/com/jack/animator/SpiderEffectView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1494">
+        <state relative-caret-position="2115">
           <caret line="168" column="57" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="121" column="74" selection-start-line="121" selection-start-column="74" selection-end-line="121" selection-end-column="74" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/TestSpiderAnimViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/RangeLayoutHelperFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/DelegateAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="504" column="46" lean-forward="true" selection-start-line="504" selection-start-column="46" selection-end-line="504" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/MarginLayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/SearchStickLayoutHelper_backup.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/Range.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3075">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/FixAreaLayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/LinearLayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/StickyLayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/VirtualLayoutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="356" column="36" lean-forward="true" selection-start-line="356" selection-start-column="29" selection-end-line="356" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/VirtualLayoutAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/LayoutHelperFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/fragment/AppCategoryWidgetBaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/fragment/categoryfragment/RecyclerWidgetFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/26.1.0/63d6891b399433c913fe91ce95a8456de02d367f/recyclerview-v7-26.1.0-sources.jar!/android/support/v7/widget/RecyclerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53265">
+          <caret line="3692" column="32" selection-start-line="3692" selection-start-column="16" selection-end-line="3692" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/ExposeLinearLayoutManagerEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dev_inst/Android_SDK/sources/android-26/android/support/v7/widget/RecyclerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="3690" column="32" selection-start-line="3690" selection-start-column="16" selection-end-line="3690" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/26.1.0/63d6891b399433c913fe91ce95a8456de02d367f/recyclerview-v7-26.1.0-sources.jar!/android/support/v7/widget/LinearLayoutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="756" column="24" lean-forward="true" selection-start-line="756" selection-start-column="24" selection-end-line="756" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/LayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#SpiderEffectView#0" />
+            <element signature="e#2418#2419#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jack/app/test/anim/TestSpiderAnimViewActivity.java">
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/LayoutManagerHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="180">
+          <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/BaseLayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="331" column="21" lean-forward="true" selection-start-line="331" selection-start-column="21" selection-end-line="331" selection-end-column="21" />
+          <folding>
+            <element signature="e#11239#11240#0" expanded="true" />
+            <element signature="e#11310#11311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opensource/vlayout/src/main/java/com/alibaba/android/vlayout/layout/GridLayoutHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1696">
+          <caret line="214" column="164" selection-start-line="214" selection-start-column="164" selection-end-line="214" selection-end-column="164" />
         </state>
       </provider>
     </entry>
