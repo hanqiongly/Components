@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.jack.imageview.CustomRoundedImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/iv_res_fix_image_disp"
+        android:layout_gravity="center"
+        app:riv_border_color="@color/black_60"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="20dp"
+        android:src="@drawable/bridge"
+        />
+    <TextView
+        android:id="@+id/tv_btn_load_extern_resource"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_item_margin_10dp"
+        android:text="加载外部资源"/>
+</LinearLayout>

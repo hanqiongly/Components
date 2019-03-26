@@ -15,5 +15,11 @@
 
         <!--Image Canvas activity-->
         <activity android:name=".image.activity.CanvasUsageAnalysisActivity"/>
+
+        <!-- Framework analysis activity declaration -->
+        <activity android:name=".framework.activity.TestResFixActivity"/>
+        <activity android:name=".framework.activity.TestHookActivityStartActivity"/>
+        <activity android:name=".framework.activity.StubActivity"/>
+
     </application>
 </manifest>

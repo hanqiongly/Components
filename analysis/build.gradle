@@ -38,6 +38,7 @@ android {
             java.srcDirs = ['src/main/java']
             res.srcDirs = ['src/main/res',
                            'src/main/resImage',
+                           'src/main/resframework',
             ]
         }
         main.assets.srcDirs=['src/main/assets']

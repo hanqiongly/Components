@@ -1,0 +1,4 @@
+** 当前包用于组织所有页面的分类、入口；用于展示不同的类别的事例的入口
+包com.jack.app.mainpage主要包含了app主页面的显示框架
+包com.jack.app.framework主要包含了基于classloader的热修复原理以及hook技术的原理展示与分析
+包com.jack.app.test则用于测试不同的组件下的自定义类的运行与显示结果

@@ -1,6 +1,9 @@
 package com.jack.platform.application;
 
 import android.app.Application;
+import android.content.Context;
+
+import com.jack.platform.framework.hook.HookHelper;
 
 /**
  *
@@ -26,4 +29,15 @@ public class ComponentApplication extends Application{
 
     private void initCacheManger() {
     }
+
+    public void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
+//        try {
+//            HookHelper.hookAMS();
+//            HookHelper.hookHandler();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+    }
+
 }

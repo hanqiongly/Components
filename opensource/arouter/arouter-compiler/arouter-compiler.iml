@@ -34,10 +34,5 @@
     <orderEntry type="library" exported="" name="Gradle: commons-collections4-4.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: auto-common-0.3" level="project" />
     <orderEntry type="library" exported="" name="Gradle: guava-18.0" level="project" />
-    <orderEntry type="module" module-name="arouter-annotation" exported="" />
-    <orderEntry type="module" module-name="arouter-annotation" exported="" />
-    <orderEntry type="module" module-name="arouter-annotation" exported="" />
-    <orderEntry type="module" module-name="arouter-annotation" exported="" />
-    <orderEntry type="module" module-name="arouter-annotation" exported="" />
   </component>
 </module>

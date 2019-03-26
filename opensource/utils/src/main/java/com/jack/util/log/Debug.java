@@ -10,4 +10,8 @@ public class Debug {
     public static void d(String info) {
         Log.d("Components" , info);
     }
+
+    public static void d(String tag, String info) {
+        Log.d(tag , info);
+    }
 }

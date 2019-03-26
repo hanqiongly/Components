@@ -1,6 +1,7 @@
 package com.jack.app.mainpage.fragment.categoryfragment;
 
 import com.jack.analysis.activity.AnalysisRoundedBackgroundAndShaderActivity;
+import com.jack.analysis.framework.activity.TestHookActivityStartActivity;
 import com.jack.analysis.image.activity.CanvasUsageAnalysisActivity;
 import com.jack.analysis.recycler.activity.AnalysisDeleteRecyclerItemActivity;
 import com.jack.app.mainpage.fragment.AppCategoryFragmentAdapter;
@@ -44,6 +45,11 @@ public class AnalysisModuleFragment extends AppCategoryWidgetBaseFragment {
         analysisCanvasActivity.setClassInfo("分析CanvasAPI以及使用机制");
         analysisCanvasActivity.setClassType(CanvasUsageAnalysisActivity.class);
         targetClassInfoModelList.add(analysisCanvasActivity);
+
+        TargetClassInfoModel analysisHookActivityStart = new TargetClassInfoModel();
+        analysisHookActivityStart.setClassInfo("分析HookActivity中的startActivity流程");
+        analysisHookActivityStart.setClassType(TestHookActivityStartActivity.class);
+        targetClassInfoModelList.add(analysisHookActivityStart);
         return targetClassInfoModelList;
     }
 }
