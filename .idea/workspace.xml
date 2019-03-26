@@ -11,561 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a72b4eef-320f-4b68-b1b3-2cfed920c5f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/java/com/jack/analysis/framework/activity/StubActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/java/com/jack/analysis/framework/activity/TargetActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/java/com/jack/analysis/framework/activity/TestHookActivityStartActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/java/com/jack/analysis/framework/activity/TestResFixActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/java/com/jack/analysis/framework/hook/InstrumentationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/java/com/jack/analysis/framework/loaders/ExtResourcePatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/resframework/drawable-xxhdpi/bridge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/resframework/layout/framework_component_stub_activity_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/resframework/layout/framework_component_target_activity_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/resframework/layout/framework_res_test_activity_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/resframework/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/src/main/resframework/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/extra/extra.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opensource/platform/src/main/java/com/jack/platform/framework/hook/HCallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opensource/platform/src/main/java/com/jack/platform/framework/hook/HookHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opensource/platform/src/main/java/com/jack/platform/framework/proxy/IActivityManagerProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opensource/platform/src/main/java/com/jack/platform/framework/utils/FieldUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/analysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/fragment/categoryfragment/AnalysisModuleFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/fragment/categoryfragment/AnalysisModuleFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jack/app/mainpage/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jack/app/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-39-08-150.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-41-17-766.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-44-26-597.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-45-34-170.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-46-18-793.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-52-16-050.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-15-17-53-59-329.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-13-41-17-053.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-15-14-23-821.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-15-15-07-872.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-16-17-06-628.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-16-18-55-498.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-16-25-15-835.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-16-28-09-691.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-02-30-604.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-03-46-487.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-07-19-909.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-14-46-375.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-18-08-419.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-18-37-050.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-19-30-019.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-20-35-017.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-41-20-886.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-42-48-354.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-45-55-295.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-46-12-686.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-47-38-409.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-48-38-595.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-49-06-902.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-55-02-466.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-16-17-55-42-049.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-11-32-49-973.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-11-33-49-863.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-13-40-31-144.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-13-43-13-055.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-13-48-44-687.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-13-50-11-363.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-13-50-53-209.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-14-01-46-980.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-17-14-04-28-553.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-19-10-46-40-133.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-19-10-46-55-354.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-19-11-31-11-725.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-19-13-46-32-301.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-10-24-14-57-15-504.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-11-07-17-18-51-609.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-11-07-17-19-05-765.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/animator/animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/animator/animator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/imageview/imageview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/imageview/imageview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/pull/pull.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/pull/pull.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/recycler/recycler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/recycler/recycler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/texture/texture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/texture/texture.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/viewgroup/viewgroup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/viewgroup/viewgroup.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/widget/widget.iml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/widget/widget.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/http/http.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-annotation/build/libs/arouter-annotation.jar" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-annotation/build/libs/arouter-annotation.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/arouter-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-api/arouter-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/arch/lifecycle/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/support/compat/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/support/coreui/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/support/coreutils/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/support/fragment/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/support/mediacompat/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/android/support/v4/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/generated/source/r/debug/com/alibaba/android/arouter/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/annotations/debug/annotations.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-af.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-am.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-az.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-b+sr+Latn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-be.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-bg.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-bn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-bs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ca.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-cs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-da.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-de.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-el.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-en-rAU.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-en-rGB.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-en-rIN.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-es-rUS.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-es.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-eu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-fa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-fi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-fr-rCA.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-fr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-gl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-gu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-hi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-hr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-hu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-hy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-in.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-is.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-it.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-iw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ja.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ka.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-kk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-km.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-kn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ky.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-lo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-lt.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-lv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-mk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ml.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-mn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-mr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ms.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-my.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-nb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ne.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-nl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-pa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-port.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-pt-rBR.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-pt-rPT.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-pt.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ro.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ru.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-si.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-sk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-sl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-sq.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-sr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-sw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-te.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-th.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-tl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-tr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-uk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-ur.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-uz.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-v16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-v21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-v24.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-vi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-zh-rCN.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-zh-rHK.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-zh-rTW.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values-zu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/multi/values.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/drawable-v21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/drawable.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/layout-v16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/layout-v21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/blame/res/debug/single/layout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/bundles/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/bundles/debug/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/bundles/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/arch/lifecycle/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/compat/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreui/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/coreutils/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/fragment/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/mediacompat/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/android/support/v4/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$bool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R$styleable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/base/UniqueKeyTreeMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/AutowiredLifecycleCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/AutowiredServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/InstrumentationHook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/InterceptorServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/InterceptorServiceImpl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/InterceptorServiceImpl$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/InterceptorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/LogisticsCenter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/LogisticsCenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/core/Warehouse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/exception/HandlerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/exception/InitException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/exception/NoRouteFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/Postcard$FlagInt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/Postcard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/callback/InterceptorCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/callback/NavCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/callback/NavigationCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/service/AutowiredService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/service/ClassLoaderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/service/DegradeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/service/InterceptorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/service/PathReplaceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/service/SerializationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IInterceptorGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/ILogger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IPolicy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IProviderGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IRouteGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/IRouteRoot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/facade/template/ISyringe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/launcher/ARouter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/launcher/_ARouter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/launcher/_ARouter$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/launcher/_ARouter$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/launcher/_ARouter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/routes/ARouter$$Group$$arouter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/routes/ARouter$$Providers$$arouterapi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/routes/ARouter$$Root$$arouterapi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/thread/CancelableCountDownLatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/thread/DefaultPoolExecutor$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/thread/DefaultPoolExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/thread/DefaultThreadFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/thread/DefaultThreadFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/ClassUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/ClassUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/Consts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/DefaultLogger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/MapUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/PackageUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/classes/debug/com/alibaba/android/arouter/utils/TextUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental-safeguard/debug/tag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_low_normal.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_low_pressed.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_normal.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_normal_pressed.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-hdpi-v4/notify_panel_notification_icon_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-mdpi-v4/notification_bg_low_normal.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-mdpi-v4/notification_bg_low_pressed.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-mdpi-v4/notification_bg_normal.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-mdpi-v4/notification_bg_normal_pressed.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-mdpi-v4/notify_panel_notification_icon_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_pressed.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable/notification_bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout-v21/notification_action.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_action.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_media_action.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_media.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-af/values-af.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-am/values-am.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ar/values-ar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-az/values-az.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-b+sr+Latn/values-b+sr+Latn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-be/values-be.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-bg/values-bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-bn/values-bn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-bs/values-bs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ca/values-ca.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-da/values-da.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-el/values-el.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-en-rAU/values-en-rAU.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-en-rIN/values-en-rIN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-es-rUS/values-es-rUS.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-et/values-et.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-eu/values-eu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-fa/values-fa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-fi/values-fi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-fr-rCA/values-fr-rCA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-gl/values-gl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-gu/values-gu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-hi/values-hi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-hr/values-hr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-hu/values-hu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-hy/values-hy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-in/values-in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-is/values-is.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-iw/values-iw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ka/values-ka.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-kk/values-kk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-km/values-km.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-kn/values-kn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ky/values-ky.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-lo/values-lo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-lt/values-lt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-lv/values-lv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-mk/values-mk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ml/values-ml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-mn/values-mn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-mr/values-mr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ms/values-ms.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-my/values-my.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ne/values-ne.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-pa/values-pa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-pl/values-pl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-port/values-port.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-pt/values-pt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ro/values-ro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-si/values-si.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-sk/values-sk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-sl/values-sl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-sq/values-sq.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-sr/values-sr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-sw/values-sw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ta/values-ta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-te/values-te.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-th/values-th.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-tl/values-tl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-tr/values-tr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-uk/values-uk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-ur/values-ur.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-uz/values-uz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-v16/values-v16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-v21/values-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-v24/values-v24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values-zu/values-zu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-api/build/intermediates/res/merged/debug/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/arouter-compiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/arouter-compiler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/build/libs/arouter-compiler.jar" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/arouter/arouter-compiler/build/libs/arouter-compiler.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/platform/platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/platform/platform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/platform/src/main/java/com/jack/platform/application/ComponentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/platform/src/main/java/com/jack/platform/application/ComponentApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/utils/src/main/java/com/jack/util/log/Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/utils/src/main/java/com/jack/util/log/Debug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/utils/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/utils/utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opensource/vlayout/vlayout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opensource/vlayout/vlayout.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/extra/extra.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/extra/extra.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -642,7 +88,7 @@
           <entry key="gradle" value="39" />
           <entry key="iml" value="12" />
           <entry key="java" value="13982" />
-          <entry key="md" value="184" />
+          <entry key="md" value="185" />
           <entry key="xml" value="808" />
         </counts>
       </usages-collector>
@@ -651,7 +97,7 @@
           <entry key="Groovy" value="39" />
           <entry key="IDEA_MODULE" value="12" />
           <entry key="JAVA" value="13982" />
-          <entry key="Markdown" value="184" />
+          <entry key="Markdown" value="185" />
           <entry key="XML" value="808" />
         </counts>
       </usages-collector>
@@ -698,8 +144,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/extra/extra.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="382" column="1" selection-start-line="382" selection-start-column="1" selection-end-line="382" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -757,7 +203,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setAdap</find>
       <find>runP</find>
       <find>mLayoutView</find>
       <find>beforeLayout</find>
@@ -787,6 +232,7 @@
       <find>onIntercept</find>
       <find>ofK</find>
       <find>measure(</find>
+      <find>com.meitu.meipu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -858,7 +304,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
+    <option name="x" value="-113" />
     <option name="y" value="23" />
     <option name="width" value="1436" />
     <option name="height" value="877" />
@@ -1160,11 +606,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="23" width="1436" height="877" extended-state="0" />
+    <frame x="-113" y="23" width="1436" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.30989957" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.30989957" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -1173,9 +619,9 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49569583" weight="0.2952756" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5143472" side_tool="true" visible="true" weight="0.13648294" />
-      <window_info anchor="bottom" id="Build" order="4" sideWeight="0.4856528" visible="true" weight="0.13648294" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.8500717" visible="true" weight="0.31889763" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.14992826" side_tool="true" visible="true" weight="0.31889763" />
+      <window_info anchor="bottom" id="Build" order="4" sideWeight="0.4856528" weight="0.54068244" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Logcat" order="6" sideWeight="0.82546496" weight="0.13135068" />
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
@@ -1569,8 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/extra/extra.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="382" column="1" selection-start-line="382" selection-start-column="1" selection-end-line="382" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>

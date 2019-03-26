@@ -1,4 +1,3 @@
-package com.meitu.meipu.core.http;
 
 import android.content.Context;
 
